@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
+.freeBox___43Ce {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #091540;
+  align-content: unset;
+  min-width: 0;
+}
+.freeBox__h5FgZ {
+  position: relative;
+  padding-right: 10px;
+  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  font-size: 23px;
+}
+.freeBox__hj7Zj {
+  position: relative;
+  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 23px;
+}
+.freeBox__i3Qrv {
+  position: relative;
+  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 23px;
+}
