@@ -92,8 +92,12 @@ function PlasmicHomepage__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <title key="title">{""}</title>
-        <meta key="og:title" property="og:title" content={""} />
+        <title key="title">{"Boombox - Free Discord Music Bot"}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={"Boombox - Free Discord Music Bot"}
+        />
         <meta
           key="description"
           name="description"
