@@ -239,34 +239,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg___2TKh)}
-                        role={"img"}
-                      />
-                    }
-                    className={classNames("__wab_instance", sty.button__w6WEp)}
-                    link={"#services" as const}
-                    navLink={"navLink" as const}
-                    slot={
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.freeBox__d427
-                        )}
-                      >
-                        {"About Us"}
-                      </div>
-                    }
-                  >
-                    <svg
-                      className={classNames(defaultcss.all, sty.svg__duukR)}
-                      role={"img"}
-                    />
-                  </Button>
-
-                  <Button
-                    children2={
-                      <svg
                         className={classNames(defaultcss.all, sty.svg__wZKtY)}
                         role={"img"}
                       />
@@ -300,7 +272,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       />
                     }
                     className={classNames("__wab_instance", sty.button__dfVV)}
-                    link={"#pricing" as const}
+                    link={"https://status.boomboxdiscord.dev/" as const}
                     navLink={"navLink" as const}
                     slot={
                       <div
@@ -316,6 +288,34 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     <svg
                       className={classNames(defaultcss.all, sty.svg__scUzc)}
+                      role={"img"}
+                    />
+                  </Button>
+
+                  <Button
+                    children2={
+                      <svg
+                        className={classNames(defaultcss.all, sty.svg___5BsU)}
+                        role={"img"}
+                      />
+                    }
+                    className={classNames("__wab_instance", sty.button__dN5Vc)}
+                    link={"https://discord.gg/HKnyEB9" as const}
+                    navLink={"navLink" as const}
+                    slot={
+                      <div
+                        className={classNames(
+                          defaultcss.all,
+                          defaultcss.__wab_text,
+                          sty.freeBox___059VL
+                        )}
+                      >
+                        {"Support Server"}
+                      </div>
+                    }
+                  >
+                    <svg
+                      className={classNames(defaultcss.all, sty.svg__dZype)}
                       role={"img"}
                     />
                   </Button>
@@ -553,13 +553,11 @@ function PlasmicHomepage__RenderFunc(props: {
             </div>
           </div>
 
-          <div className={classNames(defaultcss.all, sty.freeBox__h3Wkd)}>
-            <TableCommands
-              data-plasmic-name={"tableCommands"}
-              data-plasmic-override={overrides.tableCommands}
-              className={classNames("__wab_instance", sty.tableCommands)}
-            />
-          </div>
+          <TableCommands
+            data-plasmic-name={"tableCommands"}
+            data-plasmic-override={overrides.tableCommands}
+            className={classNames("__wab_instance", sty.tableCommands)}
+          />
 
           <BoomboxBottomInvite
             data-plasmic-name={"boomboxBottomInvite"}
