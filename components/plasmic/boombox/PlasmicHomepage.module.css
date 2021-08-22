@@ -8,7 +8,7 @@
   min-width: 0;
   min-height: 0;
 }
-.heroSection2:global(.__wab_instance) {
+.header:global(.__wab_instance) {
   position: relative;
   min-height: 512px;
 }
@@ -425,7 +425,24 @@
 .freeBox__ooYvO {
   height: auto;
 }
-.callToActionSection1:global(.__wab_instance) {
+.freeBox___39ReI {
+  position: relative;
+  font-weight: 800;
+  font-size: 48px;
+  text-align: center;
+}
+.freeBox__h3Wkd {
+  display: block;
+  position: relative;
+}
+.tableCommands:global(.__wab_instance) {
+  position: absolute;
+  width: 735px;
+  height: 75px;
+  left: 624px;
+  top: 8px;
+}
+.boomboxBottomInvite:global(.__wab_instance) {
   position: relative;
 }
 .img__mVcIh {

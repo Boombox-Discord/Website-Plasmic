@@ -2,9 +2,9 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import {
-  PlasmicFooterLeft,
-  DefaultFooterLeftProps
-} from "./plasmic/boombox/PlasmicFooterLeft";
+  PlasmicBoomboxBottomInvite,
+  DefaultBoomboxBottomInviteProps
+} from "./plasmic/boombox/PlasmicBoomboxBottomInvite";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
@@ -14,32 +14,35 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 // If you don't want to expose certain variants or slots as a prop, you can use
 // Omit to hide them:
 //
-// interface FooterLeftProps extends Omit<DefaultFooterLeftProps, "hideProps1"|"hideProp2"> {
+// interface BoomboxBottomInviteProps extends Omit<DefaultBoomboxBottomInviteProps, "hideProps1"|"hideProp2"> {
 //   // etc.
 // }
 //
-// You can also stop extending from DefaultFooterLeftProps altogether and have
+// You can also stop extending from DefaultBoomboxBottomInviteProps altogether and have
 // total control over the props for your component.
-interface FooterLeftProps extends DefaultFooterLeftProps {}
+interface BoomboxBottomInviteProps extends DefaultBoomboxBottomInviteProps {}
 
-function FooterLeft_(props: FooterLeftProps, ref: HTMLElementRefOf<"div">) {
-  // Use PlasmicFooterLeft to render this component as it was
+function BoomboxBottomInvite_(
+  props: BoomboxBottomInviteProps,
+  ref: HTMLElementRefOf<"div">
+) {
+  // Use PlasmicBoomboxBottomInvite to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicFooterLeft are:
+  // Props you can pass into PlasmicBoomboxBottomInvite are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, we are just piping all FooterLeftProps here, but feel free
+  // By default, we are just piping all BoomboxBottomInviteProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicFooterLeft root={{ ref }} {...props} />;
+  return <PlasmicBoomboxBottomInvite root={{ ref }} {...props} />;
 }
 
-const FooterLeft = React.forwardRef(FooterLeft_);
-export default FooterLeft;
+const BoomboxBottomInvite = React.forwardRef(BoomboxBottomInvite_);
+export default BoomboxBottomInvite;

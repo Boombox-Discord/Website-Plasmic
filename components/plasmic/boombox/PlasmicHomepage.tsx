@@ -33,12 +33,13 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import HeroSection2 from "../../HeroSection2"; // plasmic-import: WB6h5LQiaaY8/component
+import Header from "../../Header"; // plasmic-import: WB6h5LQiaaY8/component
 import Button from "../../Button"; // plasmic-import: OTuzjleeHGwD/component
 import Navigation from "../../Navigation"; // plasmic-import: YifvoXt3BSlX/component
 import ValuesSection3 from "../../ValuesSection3"; // plasmic-import: RA0kcS6NzhvF/component
 import Valueprop from "../../Valueprop"; // plasmic-import: hJcqnmW0bQuh/component
-import CallToActionSection1 from "../../CallToActionSection1"; // plasmic-import: aBt1NRUsayI0/component
+import TableCommands from "../../TableCommands"; // plasmic-import: GrIe7_lVtx/component
+import BoomboxBottomInvite from "../../BoomboxBottomInvite"; // plasmic-import: aBt1NRUsayI0/component
 import Footer from "../../Footer"; // plasmic-import: qHry5XO3se/component
 
 import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: fexfuEBwKf3q/globalVariant
@@ -62,11 +63,12 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
-  heroSection2?: p.Flex<typeof HeroSection2>;
+  header?: p.Flex<typeof Header>;
   navigation?: p.Flex<typeof Navigation>;
   valuesSection3?: p.Flex<typeof ValuesSection3>;
   h2?: p.Flex<"h2">;
-  callToActionSection1?: p.Flex<typeof CallToActionSection1>;
+  tableCommands?: p.Flex<typeof TableCommands>;
+  boomboxBottomInvite?: p.Flex<typeof BoomboxBottomInvite>;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -118,10 +120,10 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
-          <HeroSection2
-            data-plasmic-name={"heroSection2"}
-            data-plasmic-override={overrides.heroSection2}
-            className={classNames("__wab_instance", sty.heroSection2)}
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
             foreground={
               <p.Stack
                 as={"div"}
@@ -347,7 +349,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
               />
             </Navigation>
-          </HeroSection2>
+          </Header>
 
           <div
             className={classNames(defaultcss.all, sty.freeBox__t72Kq)}
@@ -539,11 +541,29 @@ function PlasmicHomepage__RenderFunc(props: {
                 </React.Fragment>
               }
             />
+
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.freeBox___39ReI
+              )}
+            >
+              {"Commands"}
+            </div>
           </div>
 
-          <CallToActionSection1
-            data-plasmic-name={"callToActionSection1"}
-            data-plasmic-override={overrides.callToActionSection1}
+          <div className={classNames(defaultcss.all, sty.freeBox__h3Wkd)}>
+            <TableCommands
+              data-plasmic-name={"tableCommands"}
+              data-plasmic-override={overrides.tableCommands}
+              className={classNames("__wab_instance", sty.tableCommands)}
+            />
+          </div>
+
+          <BoomboxBottomInvite
+            data-plasmic-name={"boomboxBottomInvite"}
+            data-plasmic-override={overrides.boomboxBottomInvite}
             art={
               <img
                 alt={""}
@@ -552,7 +572,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 src={"/plasmic/boombox/images/boomboxBottomBannersvg2.svg"}
               />
             }
-            className={classNames("__wab_instance", sty.callToActionSection1)}
+            className={classNames("__wab_instance", sty.boomboxBottomInvite)}
             copy={
               <React.Fragment>
                 <p.Stack
@@ -611,18 +631,20 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "heroSection2",
+    "header",
     "navigation",
     "valuesSection3",
     "h2",
-    "callToActionSection1",
+    "tableCommands",
+    "boomboxBottomInvite",
     "footer"
   ],
-  heroSection2: ["heroSection2", "navigation"],
+  header: ["header", "navigation"],
   navigation: ["navigation"],
   valuesSection3: ["valuesSection3", "h2"],
   h2: ["h2"],
-  callToActionSection1: ["callToActionSection1"],
+  tableCommands: ["tableCommands"],
+  boomboxBottomInvite: ["boomboxBottomInvite"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -630,11 +652,12 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  heroSection2: typeof HeroSection2;
+  header: typeof Header;
   navigation: typeof Navigation;
   valuesSection3: typeof ValuesSection3;
   h2: "h2";
-  callToActionSection1: typeof CallToActionSection1;
+  tableCommands: typeof TableCommands;
+  boomboxBottomInvite: typeof BoomboxBottomInvite;
   footer: typeof Footer;
 };
 
@@ -699,11 +722,12 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    heroSection2: makeNodeComponent("heroSection2"),
+    header: makeNodeComponent("header"),
     navigation: makeNodeComponent("navigation"),
     valuesSection3: makeNodeComponent("valuesSection3"),
     h2: makeNodeComponent("h2"),
-    callToActionSection1: makeNodeComponent("callToActionSection1"),
+    tableCommands: makeNodeComponent("tableCommands"),
+    boomboxBottomInvite: makeNodeComponent("boomboxBottomInvite"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage

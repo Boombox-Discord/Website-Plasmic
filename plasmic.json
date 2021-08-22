@@ -41,19 +41,6 @@
           "componentType": "page"
         },
         {
-          "id": "WB6h5LQiaaY8",
-          "name": "HeroSection2",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicHeroSection2.tsx",
-          "importSpec": {
-            "modulePath": "HeroSection2.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicHeroSection2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "YifvoXt3BSlX",
           "name": "Navigation",
           "type": "managed",
@@ -145,136 +132,6 @@
           "componentType": "component"
         },
         {
-          "id": "KhHuQlC2ZZrz",
-          "name": "ValuesSection2Dark",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicValuesSection2Dark.tsx",
-          "importSpec": {
-            "modulePath": "ValuesSection2Dark.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicValuesSection2Dark.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "xzTiigoH4iJQ",
-          "name": "ListItem",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicListItem.tsx",
-          "importSpec": {
-            "modulePath": "ListItem.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicListItem.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "lJEOaaBq9LDy",
-          "name": "PricingSection3",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicPricingSection3.tsx",
-          "importSpec": {
-            "modulePath": "PricingSection3.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicPricingSection3.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "0YFmh272EPIb",
-          "name": "ShopBanners",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicShopBanners.tsx",
-          "importSpec": {
-            "modulePath": "ShopBanners.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicShopBanners.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "veXJF2v7acJs",
-          "name": "Banner",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicBanner.tsx",
-          "importSpec": {
-            "modulePath": "Banner.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicBanner.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "MhxoujITqQog",
-          "name": "LogoCloudSection2",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicLogoCloudSection2.tsx",
-          "importSpec": {
-            "modulePath": "LogoCloudSection2.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicLogoCloudSection2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "sNRVC2LOkBOM",
-          "name": "TestimonialsSection1",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicTestimonialsSection1.tsx",
-          "importSpec": {
-            "modulePath": "TestimonialsSection1.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicTestimonialsSection1.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "J8IQfN4Pt6hP",
-          "name": "Testimonial",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicTestimonial.tsx",
-          "importSpec": {
-            "modulePath": "Testimonial.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicTestimonial.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "aBt1NRUsayI0",
-          "name": "CallToActionSection1",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicCallToActionSection1.tsx",
-          "importSpec": {
-            "modulePath": "CallToActionSection1.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicCallToActionSection1.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "nc2K6qmT6T",
-          "name": "FooterLeft",
-          "type": "managed",
-          "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicFooterLeft.tsx",
-          "importSpec": {
-            "modulePath": "FooterLeft.tsx"
-          },
-          "cssFilePath": "plasmic/boombox/PlasmicFooterLeft.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "qHry5XO3se",
           "name": "Footer",
           "type": "managed",
@@ -288,28 +145,41 @@
           "componentType": "component"
         },
         {
-          "id": "YTcpo9mYdx",
-          "name": "Row2",
+          "id": "WB6h5LQiaaY8",
+          "name": "Header",
           "type": "managed",
           "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicRow2.tsx",
+          "renderModuleFilePath": "plasmic/boombox/PlasmicHeader.tsx",
           "importSpec": {
-            "modulePath": "Row2.tsx"
+            "modulePath": "Header.tsx"
           },
-          "cssFilePath": "plasmic/boombox/PlasmicRow2.module.css",
+          "cssFilePath": "plasmic/boombox/PlasmicHeader.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
         {
-          "id": "CrE_0RCIl5",
-          "name": "Table",
+          "id": "aBt1NRUsayI0",
+          "name": "BoomboxBottomInvite",
           "type": "managed",
           "projectId": "4a4asApkm6hESDYKtdyu2N",
-          "renderModuleFilePath": "plasmic/boombox/PlasmicTable.tsx",
+          "renderModuleFilePath": "plasmic/boombox/PlasmicBoomboxBottomInvite.tsx",
           "importSpec": {
-            "modulePath": "Table.tsx"
+            "modulePath": "BoomboxBottomInvite.tsx"
           },
-          "cssFilePath": "plasmic/boombox/PlasmicTable.module.css",
+          "cssFilePath": "plasmic/boombox/PlasmicBoomboxBottomInvite.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "GrIe7_lVtx",
+          "name": "TableCommands",
+          "type": "managed",
+          "projectId": "4a4asApkm6hESDYKtdyu2N",
+          "renderModuleFilePath": "plasmic/boombox/PlasmicTableCommands.tsx",
+          "importSpec": {
+            "modulePath": "TableCommands.tsx"
+          },
+          "cssFilePath": "plasmic/boombox/PlasmicTableCommands.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
