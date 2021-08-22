@@ -54,6 +54,11 @@ function TableCommands_(
         container: {
           'max-width': '1000px',
         }
+      },
+      language: {
+        'search': {
+          'placeholder': 'Search For Commands...'
+        }
       }
     }).render(wrapper.current)
   })
