@@ -281,9 +281,16 @@ function PlasmicHeader__RenderFunc(props: {
                         sty.freeBox__p5DVy
                       )}
                     >
-                      <span>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                      >
                         <React.Fragment>{"Designs that "}</React.Fragment>
-                        <span style={{ textDecoration: "underline" }}>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ textDecoration: "underline" }}
+                        >
                           {"adapt"}
                         </span>
                       </span>

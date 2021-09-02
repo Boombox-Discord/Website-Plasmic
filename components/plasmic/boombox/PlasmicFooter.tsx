@@ -44,6 +44,7 @@ import * as sty from "./PlasmicFooter.module.css"; // plasmic-import: qHry5XO3se
 
 import GithubsvgIcon from "./icons/PlasmicIcon__Githubsvg"; // plasmic-import: aUhSDn7lt2/icon
 import DiscordsvgIcon from "./icons/PlasmicIcon__Discordsvg"; // plasmic-import: XsHXLVKev/icon
+import DigitalOceanIcon from "./icons/PlasmicIcon__DigitalOcean"; // plasmic-import: 2vaDiSQ8y/icon
 
 export type PlasmicFooter__VariantMembers = {};
 
@@ -341,6 +342,21 @@ function PlasmicFooter__RenderFunc(props: {
                 />
               </Button>
             </div>
+          </div>
+
+          <div className={classNames(defaultcss.all, sty.column__yvAnQ)}>
+            <Button
+              className={classNames("__wab_instance", sty.button__hnmY)}
+              link={
+                "https://www.digitalocean.com/?refcode=430f071b1344&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" as const
+              }
+              slot={
+                <DigitalOceanIcon
+                  className={classNames(defaultcss.all, sty.svg__uvYO)}
+                  role={"img"}
+                />
+              }
+            />
           </div>
         </p.Stack>
       </div>

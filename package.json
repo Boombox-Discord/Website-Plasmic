@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.160",
+    "@plasmicapp/cli": "^0.1.161",
     "@plasmicapp/react-web": "^0.2.67",
     "@types/react": "^17.0.19",
     "gridjs": "^5.0.2",

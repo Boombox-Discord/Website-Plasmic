@@ -18,11 +18,11 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   background: #f4dbd8;
   align-content: unset;
-  padding: 0% 20%;
+  padding: 0% 10%;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__o86QI {
@@ -405,6 +405,52 @@
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
 }
 .svg__kDsWl {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.column__yvAnQ {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .column__yvAnQ {
+    width: auto;
+  }
+}
+.button__hnmY:global(.__wab_instance) {
+  position: relative;
+  align-self: stretch;
+}
+.svg__bHbFq {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.svg__uvYO {
+  position: relative;
+  object-fit: cover;
+  width: 256px;
+  height: 128px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__uvYO {
+    width: 100%;
+    height: 100px;
+    min-width: 0;
+  }
+}
+.svg__nxg1I {
   width: 24px;
   height: 24px;
   position: relative;

@@ -146,8 +146,13 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.freeBox__mveo
                     )}
                   >
-                    <span>
-                      <span style={{ textDecoration: "underline" }}>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                    >
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ textDecoration: "underline" }}
+                      >
                         {"Boombox Dev"}
                       </span>
                     </span>

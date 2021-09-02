@@ -182,6 +182,19 @@
           "cssFilePath": "plasmic/boombox/PlasmicTableCommands.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "LomW3_gnOH",
+          "name": "DigitalOcean",
+          "type": "managed",
+          "projectId": "4a4asApkm6hESDYKtdyu2N",
+          "renderModuleFilePath": "plasmic/boombox/PlasmicDigitalOcean.tsx",
+          "importSpec": {
+            "modulePath": "DigitalOcean.tsx"
+          },
+          "cssFilePath": "plasmic/boombox/PlasmicDigitalOcean.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -204,6 +217,11 @@
           "id": "XsHXLVKev",
           "name": "DiscordsvgIcon",
           "moduleFilePath": "plasmic/boombox/icons/PlasmicIcon__Discordsvg.tsx"
+        },
+        {
+          "id": "2vaDiSQ8y",
+          "name": "DigitalOceanIcon",
+          "moduleFilePath": "plasmic/boombox/icons/PlasmicIcon__DigitalOcean.tsx"
         }
       ],
       "images": [
@@ -240,6 +258,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.160",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.160/dist/plasmic.schema.json"
+  "cliVersion": "0.1.161",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.161/dist/plasmic.schema.json"
 }

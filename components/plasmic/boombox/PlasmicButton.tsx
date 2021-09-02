@@ -240,6 +240,11 @@ function PlasmicButton__RenderFunc(props: {
                 "endIcon",
                 "endIcon"
               ),
+              [sty.slotSlot__extraSmallShadow]: hasVariant(
+                variants,
+                "extraSmallShadow",
+                "extraSmallShadow"
+              ),
               [sty.slotSlot__large]: hasVariant(variants, "large", "large"),
               [sty.slotSlot__linkLabel]: hasVariant(
                 variants,
