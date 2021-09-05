@@ -46,7 +46,7 @@ function TableCommands_(
         ['Pause', '/pause', 'Will pause the song that is currently playing.'],
         ['Remove', '/remove [position in queue]', 'Will remove that song from the queue.'],
         ['Shuffle', '/shuffle', 'Shuffles the current queue.'],
-        ['Seek', '/seel [time e.g 1m 30s]', 'Goes to that time point in the song.'],
+        ['Seek', '/seek [time e.g 1m 30s]', 'Goes to that time point in the song.'],
         ['Save Queue', '/savequeue save [name]', 'Saves the current queue with the specified name.'],
         ['List Saved Queue', '/savequeue list', 'Shows all queues saved for your user.'],
         ['Load Saved Queue', '/savequeue load [name]', 'Loads the saved queue into the current queue'],
