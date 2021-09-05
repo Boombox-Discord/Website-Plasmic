@@ -483,7 +483,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         )}
                         flat={"flat" as const}
                         slot={
-                          "Boombox lets you play from Spotify albums, songs or playlists as well as from YouTube."
+                          "Boombox let's you play from Soundcloud, Vimeo, Spotify, YouTube or any MP3 link."
                         }
                         slot2={
                           <Icon14Icon
@@ -504,7 +504,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           />
                         }
                       >
-                        {"Play from Spotify"}
+                        {"Play from multiple sources"}
                       </Valueprop>
 
                       <Valueprop
