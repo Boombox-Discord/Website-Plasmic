@@ -165,7 +165,6 @@ function PlasmicValueprop__RenderFunc(props: {
             <img
               alt={""}
               className={classNames(defaultcss.img, sty.img__sm8Vn)}
-              role={"img"}
               src={
                 "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/twitter/281/red-apple_1f34e.png" as const
               }

@@ -112,7 +112,6 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                 <img
                   alt={""}
                   className={classNames(defaultcss.img, sty.img__fbian)}
-                  role={"img"}
                   src={
                     "https://images.unsplash.com/photo-1530099486328-e021101a494a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2916&q=80" as const
                   }
@@ -146,7 +145,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox___2YBm9
+                      sty.text___2YBm9
                     )}
                   >
                     {"Welcome"}
@@ -156,7 +155,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox___3Ydnw
+                      sty.text___3Ydnw
                     )}
                   >
                     {"Let's get going"}
@@ -166,7 +165,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox___0PfrI
+                      sty.text___0PfrI
                     )}
                   >
                     {
@@ -212,7 +211,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__gY6VG
+                          sty.text__gY6VG
                         )}
                       >
                         {"Learn more…"}

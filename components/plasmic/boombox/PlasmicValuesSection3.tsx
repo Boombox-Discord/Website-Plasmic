@@ -115,7 +115,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__fG99
+                    sty.text__fG99
                   )}
                 >
                   {
@@ -231,7 +231,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__uLXvB
+                        sty.text__uLXvB
                       )}
                     >
                       {"Dynamic range"}
@@ -274,7 +274,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__eJIl5
+                        sty.text__eJIl5
                       )}
                     >
                       {"Portable"}

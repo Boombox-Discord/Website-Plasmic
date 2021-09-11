@@ -57,13 +57,13 @@
   > img {
   margin-top: 16px;
 }
-.freeBox__mveo {
+.text__mveo {
   font-size: 60px;
   font-weight: 800;
   line-height: 1;
   color: #000000d9 /* plasmic-token: QkoDPcKK_h86 */;
 }
-.freeBox__h4MyD {
+.text__h4MyD {
   font-size: 20px;
   color: #000000 /* plasmic-token: SyiZADrf8QQi */;
   line-height: 28px;
@@ -100,7 +100,7 @@
   object-fit: cover;
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
 }
-.freeBox__rkGd3 {
+.text__rkGd3 {
   height: auto;
 }
 .svg__py9Oy {
@@ -120,7 +120,7 @@
   object-fit: cover;
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
 }
-.freeBox__fl2Cm {
+.text__fl2Cm {
   height: auto;
   font-weight: 400;
 }
@@ -163,7 +163,7 @@
   object-fit: cover;
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
 }
-.freeBox__lqUf3 {
+.text__lqUf3 {
   color: #000000 /* plasmic-token: SyiZADrf8QQi */;
   font-weight: 700;
 }
@@ -184,7 +184,7 @@
   object-fit: cover;
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
 }
-.freeBox__kwcpo {
+.text__kwcpo {
   color: #000000 /* plasmic-token: SyiZADrf8QQi */;
   font-weight: 700;
 }
@@ -205,7 +205,7 @@
   object-fit: cover;
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
 }
-.freeBox___059VL {
+.text___059VL {
   color: #000000 /* plasmic-token: SyiZADrf8QQi */;
   font-weight: 700;
 }
@@ -277,7 +277,7 @@
   transition-property: all;
   transition-duration: 1s;
 }
-.freeBox__pdq14 {
+.text__pdq14 {
   font-size: 20px;
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
   text-align: left;
@@ -421,10 +421,10 @@
   height: 24px;
   color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
 }
-.freeBox__ooYvO {
+.text__ooYvO {
   height: auto;
 }
-.freeBox___39ReI {
+.text___39ReI {
   position: relative;
   font-weight: 800;
   font-size: 48px;
@@ -482,11 +482,15 @@
     align-content: unset;
   }
 }
-.freeBox__rQbE {
+.text__rQbE {
   font-size: 48px;
   font-weight: 800;
   color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
   line-height: 1;
+}
+.text__scnVr {
+  height: auto;
+  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
 }
 .freeBox__jsnUb {
   display: flex;

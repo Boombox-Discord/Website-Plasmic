@@ -222,6 +222,11 @@
           "id": "2vaDiSQ8y",
           "name": "DigitalOceanIcon",
           "moduleFilePath": "plasmic/boombox/icons/PlasmicIcon__DigitalOcean.tsx"
+        },
+        {
+          "id": "i179dYQDQ7",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/boombox/icons/PlasmicIcon__Icon.tsx"
         }
       ],
       "images": [

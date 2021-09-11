@@ -216,7 +216,6 @@ function PlasmicHeader__RenderFunc(props: {
               <img
                 alt={""}
                 className={classNames(defaultcss.img, sty.img__u2I2)}
-                role={"img"}
                 src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
               />
             </Navigation>
@@ -236,7 +235,6 @@ function PlasmicHeader__RenderFunc(props: {
           data-plasmic-override={overrides.img}
           alt={""}
           className={classNames(defaultcss.img, sty.img)}
-          role={"img"}
           src={"/plasmic/boombox/images/boomboxBannersvg.svg"}
         />
 
@@ -267,7 +265,7 @@ function PlasmicHeader__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__quc0T
+                          sty.text__quc0T
                         )}
                       >
                         {"Updated!"}
@@ -278,7 +276,7 @@ function PlasmicHeader__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__p5DVy
+                        sty.text__p5DVy
                       )}
                     >
                       <span
@@ -300,7 +298,7 @@ function PlasmicHeader__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__dFR6
+                        sty.text__dFR6
                       )}
                     >
                       {
@@ -331,7 +329,7 @@ function PlasmicHeader__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__qyLhE
+                            sty.text__qyLhE
                           )}
                         >
                           {"Start now ->"}
@@ -362,7 +360,7 @@ function PlasmicHeader__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__minCm
+                            sty.text__minCm
                           )}
                         >
                           {"Learn more…"}
@@ -394,7 +392,7 @@ function PlasmicHeader__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__w9VVo
+                          sty.text__w9VVo
                         )}
                       >
                         {"Sign up with"}
@@ -482,7 +480,7 @@ function PlasmicHeader__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__qUrLh
+                            sty.text__qUrLh
                           )}
                         >
                           {"Or"}
@@ -564,7 +562,7 @@ function PlasmicHeader__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__iYeVc
+                          sty.text__iYeVc
                         )}
                       >
                         {

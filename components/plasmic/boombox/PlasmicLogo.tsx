@@ -84,7 +84,6 @@ function PlasmicLogo__RenderFunc(props: {
       className={classNames(defaultcss.img, projectcss.root_reset, sty.root, {
         [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
       })}
-      role={"img"}
       src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
     />
   ) as React.ReactElement | null;

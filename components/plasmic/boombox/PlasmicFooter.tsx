@@ -44,6 +44,7 @@ import * as sty from "./PlasmicFooter.module.css"; // plasmic-import: qHry5XO3se
 
 import GithubsvgIcon from "./icons/PlasmicIcon__Githubsvg"; // plasmic-import: aUhSDn7lt2/icon
 import DiscordsvgIcon from "./icons/PlasmicIcon__Discordsvg"; // plasmic-import: XsHXLVKev/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: i179dYQDQ7/icon
 import DigitalOceanIcon from "./icons/PlasmicIcon__DigitalOcean"; // plasmic-import: 2vaDiSQ8y/icon
 
 export type PlasmicFooter__VariantMembers = {};
@@ -102,7 +103,6 @@ function PlasmicFooter__RenderFunc(props: {
                 data-plasmic-override={overrides.img}
                 alt={""}
                 className={classNames(defaultcss.img, sty.img)}
-                role={"img"}
                 src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
               />
 
@@ -110,7 +110,7 @@ function PlasmicFooter__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__stvMs
+                  sty.text__stvMs
                 )}
               >
                 {"Boombox"}
@@ -120,7 +120,7 @@ function PlasmicFooter__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__bXn4O
+                  sty.text__bXn4O
                 )}
               >
                 {
@@ -172,6 +172,28 @@ function PlasmicFooter__RenderFunc(props: {
                     role={"img"}
                   />
                 </Button>
+
+                <Button
+                  children2={
+                    <svg
+                      className={classNames(defaultcss.all, sty.svg__eQcxX)}
+                      role={"img"}
+                    />
+                  }
+                  className={classNames("__wab_instance", sty.button__zeUpV)}
+                  link={"https://www.patreon.com/boomboxdev" as const}
+                  slot={
+                    <IconIcon
+                      className={classNames(defaultcss.all, sty.svg__ntQhd)}
+                      role={"img"}
+                    />
+                  }
+                >
+                  <svg
+                    className={classNames(defaultcss.all, sty.svg__lhoDm)}
+                    role={"img"}
+                  />
+                </Button>
               </div>
             </div>
           </div>
@@ -182,7 +204,7 @@ function PlasmicFooter__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__knzcX
+                  sty.text__knzcX
                 )}
               >
                 {"Boombox"}
@@ -266,7 +288,7 @@ function PlasmicFooter__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__mJzdm
+                  sty.text__mJzdm
                 )}
               >
                 {"Get Help"}
@@ -365,7 +387,7 @@ function PlasmicFooter__RenderFunc(props: {
         className={classNames(
           defaultcss.all,
           defaultcss.__wab_text,
-          sty.freeBox___5GwXa
+          sty.text___5GwXa
         )}
       >
         {"© 2021 Boombox-Dev. All rights reserved."}

@@ -143,7 +143,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox__mveo
+                      sty.text__mveo
                     )}
                   >
                     <span
@@ -162,7 +162,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox__h4MyD
+                      sty.text__h4MyD
                     )}
                   >
                     {
@@ -194,7 +194,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__rkGd3
+                          sty.text__rkGd3
                         )}
                       >
                         {"Add The Bot To Your Server ->"}
@@ -223,7 +223,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__fl2Cm
+                          sty.text__fl2Cm
                         )}
                       >
                         {"Learn more…"}
@@ -260,7 +260,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__lqUf3
+                          sty.text__lqUf3
                         )}
                       >
                         {"Patreon"}
@@ -288,7 +288,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__kwcpo
+                          sty.text__kwcpo
                         )}
                       >
                         {"Status"}
@@ -316,7 +316,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox___059VL
+                          sty.text___059VL
                         )}
                       >
                         {"Support Server"}
@@ -354,7 +354,6 @@ function PlasmicHomepage__RenderFunc(props: {
               <img
                 alt={""}
                 className={classNames(defaultcss.img, sty.img__yAqDz)}
-                role={"img"}
                 src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
               />
             </Navigation>
@@ -395,7 +394,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__pdq14
+                        sty.text__pdq14
                       )}
                     >
                       {
@@ -539,7 +538,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__ooYvO
+                            sty.text__ooYvO
                           )}
                         >
                           {"Super Fast"}
@@ -555,7 +554,7 @@ function PlasmicHomepage__RenderFunc(props: {
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.freeBox___39ReI
+                sty.text___39ReI
               )}
             >
               {"Commands"}
@@ -575,7 +574,6 @@ function PlasmicHomepage__RenderFunc(props: {
               <img
                 alt={""}
                 className={classNames(defaultcss.img, sty.img__mVcIh)}
-                role={"img"}
                 src={"/plasmic/boombox/images/boomboxBottomBannersvg2.svg"}
               />
             }
@@ -591,10 +589,22 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox__rQbE
+                      sty.text__rQbE
                     )}
                   >
-                    {"Ready To Add Boombox?"}
+                    {"Need a second bot?"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.text__scnVr
+                    )}
+                  >
+                    {
+                      "Become a Patron for only $3 per month and get access to a patron only Boombox, which runs on separate servers to the main bot so that it performs better. When you become a patron you will also get other cool perks."
+                    }
                   </div>
                 </p.Stack>
 
@@ -612,7 +622,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     className={classNames("__wab_instance", sty.button__s28Xb)}
                     darkGray={"darkGray" as const}
-                    slot={"Invite To Your Server Now ->"}
+                    link={"https://www.patreon.com/boomboxdev" as const}
+                    slot={"Become a Patron->"}
                   >
                     <svg
                       className={classNames(defaultcss.all, sty.svg__sYgzE)}
