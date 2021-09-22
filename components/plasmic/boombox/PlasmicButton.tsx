@@ -207,61 +207,69 @@ function PlasmicButton__RenderFunc(props: {
         ? p.renderPlasmicSlot({
             defaultContents: "Label",
             value: args.slot,
-            className: classNames(sty.slotSlot, {
-              [sty.slotSlot__bgDifference]: hasVariant(
+            className: classNames(sty.slotTargetSlot, {
+              [sty.slotTargetSlot__bgDifference]: hasVariant(
                 variants,
                 "bgDifference",
                 "bgDifference"
               ),
-              [sty.slotSlot__colors_blue]: hasVariant(
+              [sty.slotTargetSlot__colors_blue]: hasVariant(
                 variants,
                 "colors",
                 "blue"
               ),
-              [sty.slotSlot__colors_green]: hasVariant(
+              [sty.slotTargetSlot__colors_green]: hasVariant(
                 variants,
                 "colors",
                 "green"
               ),
-              [sty.slotSlot__colors_indigo]: hasVariant(
+              [sty.slotTargetSlot__colors_indigo]: hasVariant(
                 variants,
                 "colors",
                 "indigo"
               ),
-              [sty.slotSlot__colors_red]: hasVariant(variants, "colors", "red"),
-              [sty.slotSlot__darkGray]: hasVariant(
+              [sty.slotTargetSlot__colors_red]: hasVariant(
+                variants,
+                "colors",
+                "red"
+              ),
+              [sty.slotTargetSlot__darkGray]: hasVariant(
                 variants,
                 "darkGray",
                 "darkGray"
               ),
-              [sty.slotSlot__dark]: hasVariant(variants, "dark", "dark"),
-              [sty.slotSlot__endIcon]: hasVariant(
+              [sty.slotTargetSlot__dark]: hasVariant(variants, "dark", "dark"),
+              [sty.slotTargetSlot__endIcon]: hasVariant(
                 variants,
                 "endIcon",
                 "endIcon"
               ),
-              [sty.slotSlot__extraSmallShadow]: hasVariant(
+              [sty.slotTargetSlot__extraSmallShadow]: hasVariant(
                 variants,
                 "extraSmallShadow",
                 "extraSmallShadow"
               ),
-              [sty.slotSlot__large]: hasVariant(variants, "large", "large"),
-              [sty.slotSlot__linkLabel]: hasVariant(
+              [sty.slotTargetSlot__large]: hasVariant(
+                variants,
+                "large",
+                "large"
+              ),
+              [sty.slotTargetSlot__linkLabel]: hasVariant(
                 variants,
                 "linkLabel",
                 "linkLabel"
               ),
-              [sty.slotSlot__navLink]: hasVariant(
+              [sty.slotTargetSlot__navLink]: hasVariant(
                 variants,
                 "navLink",
                 "navLink"
               ),
-              [sty.slotSlot__noLabel]: hasVariant(
+              [sty.slotTargetSlot__noLabel]: hasVariant(
                 variants,
                 "noLabel",
                 "noLabel"
               ),
-              [sty.slotSlot__startIcon]: hasVariant(
+              [sty.slotTargetSlot__startIcon]: hasVariant(
                 variants,
                 "startIcon",
                 "startIcon"

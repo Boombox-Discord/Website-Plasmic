@@ -241,9 +241,13 @@ function PlasmicValueprop__RenderFunc(props: {
           ? p.renderPlasmicSlot({
               defaultContents: "Label",
               value: args.children,
-              className: classNames(sty.slotChildren, {
-                [sty.slotChildren__dark]: hasVariant(variants, "dark", "dark"),
-                [sty.slotChildren__justDescription]: hasVariant(
+              className: classNames(sty.slotTargetChildren, {
+                [sty.slotTargetChildren__dark]: hasVariant(
+                  variants,
+                  "dark",
+                  "dark"
+                ),
+                [sty.slotTargetChildren__justDescription]: hasVariant(
                   variants,
                   "justDescription",
                   "justDescription"
@@ -255,10 +259,10 @@ function PlasmicValueprop__RenderFunc(props: {
           defaultContents:
             "Porttitor feugiat a scelerisque nullam parturient vestibulum tempor a litora suscipit arcu potenti varius venenatis venenatis dapibus fames adipiscing in in taciti.",
           value: args.slot,
-          className: classNames(sty.slotSlot, {
-            [sty.slotSlot__card]: hasVariant(variants, "card", "card"),
-            [sty.slotSlot__dark]: hasVariant(variants, "dark", "dark"),
-            [sty.slotSlot__justDescription]: hasVariant(
+          className: classNames(sty.slotTargetSlot, {
+            [sty.slotTargetSlot__card]: hasVariant(variants, "card", "card"),
+            [sty.slotTargetSlot__dark]: hasVariant(variants, "dark", "dark"),
+            [sty.slotTargetSlot__justDescription]: hasVariant(
               variants,
               "justDescription",
               "justDescription"

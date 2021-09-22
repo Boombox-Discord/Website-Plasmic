@@ -130,17 +130,17 @@
   > img {
   margin-top: 4px;
 }
-.slotChildren {
+.slotTargetChildren {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
 }
-.slotChildren__dark {
+.slotTargetChildren__dark {
   color: #ffffffd9 /* plasmic-token: 9WHHuUZ-wxi3 */;
 }
-.slotSlot {
+.slotTargetSlot {
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
 }
-.slotSlot__dark {
+.slotTargetSlot__dark {
   color: #ffffff80 /* plasmic-token: l6sn4I48XlVX */;
 }

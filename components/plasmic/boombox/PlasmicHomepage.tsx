@@ -153,9 +153,19 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ textDecoration: "underline" }}
                       >
-                        {"Boombox Dev"}
+                        {"Boombox"}
                       </span>
                     </span>
+                  </div>
+
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.text__obXrB
+                    )}
+                  >
+                    {"A Simpler Way to Listen to Music"}
                   </div>
 
                   <div
@@ -166,7 +176,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Hey! We are Boombox-Dev, a group of developers working on an awesome free Discord music bot.\nYou can find an invite link for the bot below as well as find out more information about it."
+                      "Boombox is the easiest way to listen to music in your Discord server.\nSimply invite it to your server and start listening!"
                     }
                   </div>
                 </p.Stack>

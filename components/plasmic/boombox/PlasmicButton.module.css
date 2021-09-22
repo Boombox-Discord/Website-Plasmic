@@ -137,68 +137,73 @@
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
   flex-shrink: 0;
 }
-.slotSlot {
+.slotTargetSlot {
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
 }
-.slotSlot__colors_green {
+.slotTargetSlot__colors_green {
   color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
 }
-.slotSlot__colors_indigo {
+.slotTargetSlot__colors_indigo {
   color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
 }
-.slotSlot__colors_blue {
+.slotTargetSlot__colors_blue {
   color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
 }
-.slotSlot__colors_red {
+.slotTargetSlot__colors_red {
   color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
 }
-.slotSlot__large {
+.slotTargetSlot__large {
   font-size: 24px;
   line-height: 1.5em;
 }
-.slotSlot__linkLabel {
+.slotTargetSlot__linkLabel {
   font-weight: 400;
   color: #007aff;
 }
-.slotSlot__navLink {
+.slotTargetSlot__navLink {
   font-weight: 400;
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
 }
-.slotSlot__darkGray {
+.slotTargetSlot__darkGray {
   color: #ffffffd9 /* plasmic-token: 9WHHuUZ-wxi3 */;
 }
-.slotSlot__dark {
+.slotTargetSlot__dark {
   color: #ffffffd9 /* plasmic-token: 9WHHuUZ-wxi3 */;
 }
-.root__navLink:hover .slotSlot__navLink {
+.root__navLink:hover .slotTargetSlot__navLink {
   color: #000000d9 /* plasmic-token: QkoDPcKK_h86 */;
 }
-.root__navLink:hover .slotSlot__navLink > *,
-.root__navLink:hover .slotSlot__navLink > .__wab_slot > *,
-.root__navLink:hover .slotSlot__navLink > .__wab_slot > .__wab_slot > *,
+.root__navLink:hover .slotTargetSlot__navLink > .__wab_text,
+.root__navLink:hover .slotTargetSlot__navLink > .__wab_slot-string-wrapper,
+.root__navLink:hover .slotTargetSlot__navLink > .__wab_slot > .__wab_text,
 .root__navLink:hover
-  .slotSlot__navLink
+  .slotTargetSlot__navLink
   > .__wab_slot
-  > .__wab_slot
-  > .__wab_slot
-  > *,
-.root__navLink:hover .slotSlot__navLink > picture > img,
-.root__navLink:hover .slotSlot__navLink > .__wab_slot > picture > img,
+  > .__wab_slot-string-wrapper,
 .root__navLink:hover
-  .slotSlot__navLink
+  .slotTargetSlot__navLink
   > .__wab_slot
   > .__wab_slot
-  > picture
-  > img,
+  > .__wab_text,
 .root__navLink:hover
-  .slotSlot__navLink
+  .slotTargetSlot__navLink
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper,
+.root__navLink:hover
+  .slotTargetSlot__navLink
   > .__wab_slot
   > .__wab_slot
   > .__wab_slot
-  > picture
-  > img {
+  > .__wab_text,
+.root__navLink:hover
+  .slotTargetSlot__navLink
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper {
   text-decoration-line: underline;
 }
 .svg__cJHqH {
