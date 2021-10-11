@@ -227,6 +227,11 @@
           "id": "i179dYQDQ7",
           "name": "IconIcon",
           "moduleFilePath": "plasmic/boombox/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "9yB8Wkgc6o",
+          "name": "TwittersvgIcon",
+          "moduleFilePath": "plasmic/boombox/icons/PlasmicIcon__Twittersvg.tsx"
         }
       ],
       "images": [

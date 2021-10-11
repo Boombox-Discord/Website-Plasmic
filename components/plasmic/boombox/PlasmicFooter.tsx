@@ -45,6 +45,7 @@ import * as sty from "./PlasmicFooter.module.css"; // plasmic-import: qHry5XO3se
 import GithubsvgIcon from "./icons/PlasmicIcon__Githubsvg"; // plasmic-import: aUhSDn7lt2/icon
 import DiscordsvgIcon from "./icons/PlasmicIcon__Discordsvg"; // plasmic-import: XsHXLVKev/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: i179dYQDQ7/icon
+import TwittersvgIcon from "./icons/PlasmicIcon__Twittersvg"; // plasmic-import: 9yB8Wkgc6o/icon
 import DigitalOceanIcon from "./icons/PlasmicIcon__DigitalOcean"; // plasmic-import: 2vaDiSQ8y/icon
 
 export type PlasmicFooter__VariantMembers = {};
@@ -191,6 +192,28 @@ function PlasmicFooter__RenderFunc(props: {
                 >
                   <svg
                     className={classNames(defaultcss.all, sty.svg__lhoDm)}
+                    role={"img"}
+                  />
+                </Button>
+
+                <Button
+                  children2={
+                    <svg
+                      className={classNames(defaultcss.all, sty.svg__q1So1)}
+                      role={"img"}
+                    />
+                  }
+                  className={classNames("__wab_instance", sty.button__ye3Rl)}
+                  link={"https://twitter.com/BoomboxDiscord" as const}
+                  slot={
+                    <TwittersvgIcon
+                      className={classNames(defaultcss.all, sty.svg__gepJx)}
+                      role={"img"}
+                    />
+                  }
+                >
+                  <svg
+                    className={classNames(defaultcss.all, sty.svg__xf5MM)}
                     role={"img"}
                   />
                 </Button>

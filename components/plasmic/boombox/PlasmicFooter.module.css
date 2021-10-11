@@ -104,7 +104,7 @@
   align-items: stretch;
   justify-content: flex-start;
   background: #f4dbd8;
-  padding-left: 20px;
+  padding-left: 0px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
@@ -223,6 +223,30 @@
   margin-top: 10px;
 }
 .svg__eQcxX {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.button__ye3Rl:global(.__wab_instance) {
+  position: relative;
+}
+.svg__xf5MM {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.svg__gepJx {
+  position: relative;
+  object-fit: cover;
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+}
+.svg__q1So1 {
   width: 24px;
   height: 24px;
   position: relative;
