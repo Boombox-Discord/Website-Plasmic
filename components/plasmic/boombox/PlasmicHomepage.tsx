@@ -195,9 +195,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     className={classNames("__wab_instance", sty.button___3VkpS)}
                     darkGray={"darkGray" as const}
-                    link={
-                      "https://discord.com/oauth2/authorize?client_id=678819994250772480&permissions=36785152&scope=bot%20applications.commands" as const
-                    }
+                    link={"/invite" as const}
                     round={"round" as const}
                     slot={
                       <div
@@ -348,9 +346,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     className={classNames("__wab_instance", sty.button__qkLeh)}
                     darkGray={"darkGray" as const}
-                    link={
-                      "https://discord.com/oauth2/authorize?client_id=678819994250772480&permissions=36785152&scope=bot%20applications.commands" as const
-                    }
+                    link={"/invite" as const}
                     slot={"Invite To Discord"}
                   >
                     <svg

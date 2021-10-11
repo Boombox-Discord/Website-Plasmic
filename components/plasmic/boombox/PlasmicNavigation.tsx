@@ -48,6 +48,7 @@ export type PlasmicNavigation__VariantMembers = {
   centered: "centered";
   hideCta: "hideCta";
   lightBg: "lightBg";
+  boomboxBg: "boomboxBg";
 };
 
 export type PlasmicNavigation__VariantsArgs = {
@@ -55,6 +56,7 @@ export type PlasmicNavigation__VariantsArgs = {
   centered?: SingleBooleanChoiceArg<"centered">;
   hideCta?: SingleBooleanChoiceArg<"hideCta">;
   lightBg?: SingleBooleanChoiceArg<"lightBg">;
+  boomboxBg?: SingleBooleanChoiceArg<"boomboxBg">;
 };
 
 type VariantPropType = keyof PlasmicNavigation__VariantsArgs;
@@ -62,7 +64,8 @@ export const PlasmicNavigation__VariantProps = new Array<VariantPropType>(
   "dark",
   "centered",
   "hideCta",
-  "lightBg"
+  "lightBg",
+  "boomboxBg"
 );
 
 export type PlasmicNavigation__ArgsType = {
@@ -87,6 +90,7 @@ export interface DefaultNavigationProps {
   centered?: SingleBooleanChoiceArg<"centered">;
   hideCta?: SingleBooleanChoiceArg<"hideCta">;
   lightBg?: SingleBooleanChoiceArg<"lightBg">;
+  boomboxBg?: SingleBooleanChoiceArg<"boomboxBg">;
   className?: string;
 }
 
@@ -112,6 +116,7 @@ function PlasmicNavigation__RenderFunc(props: {
       data-plasmic-for-node={forNode}
       hasGap={true}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__boomboxBg]: hasVariant(variants, "boomboxBg", "boomboxBg"),
         [sty.root__centered]: hasVariant(variants, "centered", "centered"),
         [sty.root__dark]: hasVariant(variants, "dark", "dark"),
         [sty.root__hideCta]: hasVariant(variants, "hideCta", "hideCta"),
@@ -122,6 +127,11 @@ function PlasmicNavigation__RenderFunc(props: {
         as={"div"}
         hasGap={true}
         className={classNames(defaultcss.all, sty.freeBox__l3WLd, {
+          [sty.freeBox__boomboxBg__l3WLda7IJ0]: hasVariant(
+            variants,
+            "boomboxBg",
+            "boomboxBg"
+          ),
           [sty.freeBox__centered__l3WLdJ5RfS]: hasVariant(
             variants,
             "centered",

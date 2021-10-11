@@ -72,6 +72,9 @@
 .root__colors_white {
   background: #ffffff;
 }
+.root__colors_oxfordBlue {
+  background: #091540;
+}
 .root__round {
   padding-left: 20px;
   padding-right: 20px;
@@ -152,6 +155,9 @@
   color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
 }
 .slotTargetSlot__colors_red {
+  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+}
+.slotTargetSlot__colors_oxfordBlue {
   color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
 }
 .slotTargetSlot__large {

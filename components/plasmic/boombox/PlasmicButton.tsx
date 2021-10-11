@@ -49,7 +49,7 @@ export type PlasmicButton__VariantMembers = {
   darkGray: "darkGray";
   dark: "dark";
   bgDifference: "bgDifference";
-  colors: "green" | "indigo" | "blue" | "red" | "white";
+  colors: "green" | "indigo" | "blue" | "red" | "white" | "oxfordBlue";
   round: "round";
   large: "large";
   flat: "flat";
@@ -67,7 +67,9 @@ export type PlasmicButton__VariantsArgs = {
   darkGray?: SingleBooleanChoiceArg<"darkGray">;
   dark?: SingleBooleanChoiceArg<"dark">;
   bgDifference?: SingleBooleanChoiceArg<"bgDifference">;
-  colors?: SingleChoiceArg<"green" | "indigo" | "blue" | "red" | "white">;
+  colors?: SingleChoiceArg<
+    "green" | "indigo" | "blue" | "red" | "white" | "oxfordBlue"
+  >;
   round?: SingleBooleanChoiceArg<"round">;
   large?: SingleBooleanChoiceArg<"large">;
   flat?: SingleBooleanChoiceArg<"flat">;
@@ -127,7 +129,9 @@ export interface DefaultButtonProps {
   darkGray?: SingleBooleanChoiceArg<"darkGray">;
   dark?: SingleBooleanChoiceArg<"dark">;
   bgDifference?: SingleBooleanChoiceArg<"bgDifference">;
-  colors?: SingleChoiceArg<"green" | "indigo" | "blue" | "red" | "white">;
+  colors?: SingleChoiceArg<
+    "green" | "indigo" | "blue" | "red" | "white" | "oxfordBlue"
+  >;
   round?: SingleBooleanChoiceArg<"round">;
   large?: SingleBooleanChoiceArg<"large">;
   flat?: SingleBooleanChoiceArg<"flat">;
@@ -162,6 +166,11 @@ function PlasmicButton__RenderFunc(props: {
         [sty.root__colors_blue]: hasVariant(variants, "colors", "blue"),
         [sty.root__colors_green]: hasVariant(variants, "colors", "green"),
         [sty.root__colors_indigo]: hasVariant(variants, "colors", "indigo"),
+        [sty.root__colors_oxfordBlue]: hasVariant(
+          variants,
+          "colors",
+          "oxfordBlue"
+        ),
         [sty.root__colors_red]: hasVariant(variants, "colors", "red"),
         [sty.root__colors_white]: hasVariant(variants, "colors", "white"),
         [sty.root__darkGray]: hasVariant(variants, "darkGray", "darkGray"),
@@ -227,6 +236,11 @@ function PlasmicButton__RenderFunc(props: {
                 variants,
                 "colors",
                 "indigo"
+              ),
+              [sty.slotTargetSlot__colors_oxfordBlue]: hasVariant(
+                variants,
+                "colors",
+                "oxfordBlue"
               ),
               [sty.slotTargetSlot__colors_red]: hasVariant(
                 variants,

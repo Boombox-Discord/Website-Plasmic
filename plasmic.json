@@ -195,6 +195,19 @@
           "cssFilePath": "plasmic/boombox/PlasmicDigitalOcean.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Qx2EHlFquu",
+          "name": "Invite",
+          "type": "managed",
+          "projectId": "4a4asApkm6hESDYKtdyu2N",
+          "renderModuleFilePath": "plasmic/boombox/PlasmicInvite.tsx",
+          "importSpec": {
+            "modulePath": "../pages/invite.tsx"
+          },
+          "cssFilePath": "plasmic/boombox/PlasmicInvite.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

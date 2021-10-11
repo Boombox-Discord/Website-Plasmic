@@ -26,6 +26,9 @@
 .root__lightBg {
   background: #ffffff40;
 }
+.root__boomboxBg {
+  background: #f4dbd8;
+}
 .freeBox__l3WLd {
   display: flex;
   position: relative;
@@ -78,6 +81,9 @@
     margin-left: 0px;
     margin-top: 16px;
   }
+}
+.freeBox__boomboxBg__l3WLda7IJ0 {
+  background: #f4dbd8;
 }
 .logo___7Af9I:global(.__wab_instance) {
   flex-shrink: 0;

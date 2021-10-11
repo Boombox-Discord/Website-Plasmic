@@ -292,9 +292,7 @@ function PlasmicFooter__RenderFunc(props: {
                   />
                 }
                 className={classNames("__wab_instance", sty.button__lh50)}
-                link={
-                  "https://discord.com/oauth2/authorize?client_id=678819994250772480&permissions=36785152&scope=bot%20applications.commands" as const
-                }
+                link={"/invite" as const}
                 slot={"Invite Link"}
               >
                 <svg
@@ -364,25 +362,6 @@ function PlasmicFooter__RenderFunc(props: {
               >
                 <svg
                   className={classNames(defaultcss.all, sty.svg__xxjxn)}
-                  role={"img"}
-                />
-              </Button>
-
-              <Button
-                children2={
-                  <svg
-                    className={classNames(defaultcss.all, sty.svg__kDsWl)}
-                    role={"img"}
-                  />
-                }
-                className={classNames("__wab_instance", sty.button___52G8J)}
-                link={
-                  "https://discord.com/oauth2/authorize?client_id=678819994250772480&permissions=36785152&scope=bot%20applications.commands" as const
-                }
-                slot={"Invite Link"}
-              >
-                <svg
-                  className={classNames(defaultcss.all, sty.svg__x46An)}
                   role={"img"}
                 />
               </Button>

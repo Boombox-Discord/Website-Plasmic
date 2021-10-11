@@ -1,0 +1,185 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+.navigation:global(.__wab_instance) {
+  position: relative;
+}
+.button__esOho:global(.__wab_instance) {
+  position: relative;
+}
+.svg__ffSzI {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.text__lhC9O {
+  height: auto;
+}
+.svg__cqxrj {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.button__sbWWm:global(.__wab_instance) {
+  position: relative;
+}
+.svg__cobLi {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.text__i36SS {
+  height: auto;
+  width: auto;
+  display: inline-block;
+}
+.svg__wDeI {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.button__dVZfk:global(.__wab_instance) {
+  position: relative;
+}
+.svg___0S80E {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.text___9L2Tc {
+  height: auto;
+}
+.svg__eFg80 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.button__wqM9B:global(.__wab_instance) {
+  position: relative;
+}
+.svg__qyQK {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.svg__ijDce {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.valuesSection3:global(.__wab_instance) {
+  position: relative;
+}
+.freeBox__k7M80 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.freeBox__k7M80 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.freeBox__k7M80 > :global(.__wab_flex-container) > *,
+.freeBox__k7M80 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__k7M80 > :global(.__wab_flex-container) > picture > img,
+.freeBox__k7M80
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.freeBox__gpDgL {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #000000d9 /* plasmic-token: QkoDPcKK_h86 */;
+  line-height: 1;
+  height: auto;
+}
+.text__vsBn0 {
+  font-size: 20px;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+  text-align: left;
+  line-height: 28px;
+  width: auto;
+  display: inline-block;
+}
+.freeBox__mmTsb {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  max-width: 960px;
+}
+.freeBox__mmTsb > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: calc(0px - 48px);
+  height: calc(100% + 48px);
+}
+.freeBox__mmTsb > :global(.__wab_flex-container) > *,
+.freeBox__mmTsb > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__mmTsb > :global(.__wab_flex-container) > picture > img,
+.freeBox__mmTsb
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 48px;
+}
+.button__ikxGl:global(.__wab_instance) {
+  position: relative;
+}
+.svg__rphP {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.text___8QMbN {
+  height: auto;
+}
+.svg__hx3E4 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+}
+.footer:global(.__wab_instance) {
+  position: relative;
+}

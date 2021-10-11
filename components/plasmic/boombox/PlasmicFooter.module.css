@@ -114,6 +114,7 @@
     justify-content: flex-start;
     align-items: center;
     align-content: unset;
+    padding-left: 20px;
   }
 }
 .img {
@@ -436,23 +437,6 @@
   color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
 }
 .svg__qGwNg {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  object-fit: cover;
-  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
-}
-.button___52G8J:global(.__wab_instance) {
-  position: relative;
-}
-.svg__x46An {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  object-fit: cover;
-  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
-}
-.svg__kDsWl {
   width: 24px;
   height: 24px;
   position: relative;
