@@ -72,7 +72,12 @@ function PlasmicTextinput__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.input, projectcss.root_reset, sty.root)}
+      className={classNames(
+        defaultcss.input,
+        projectcss.input,
+        projectcss.root_reset,
+        sty.root
+      )}
       placeholder={"Some placeholder" as const}
       size={1 as const}
       type={"text" as const}

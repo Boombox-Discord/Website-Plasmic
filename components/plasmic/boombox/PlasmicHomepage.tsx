@@ -92,17 +92,12 @@ function PlasmicHomepage__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
+        <meta name="twitter:card" content="summary" />
         <title key="title">{"Boombox - Free Discord Music Bot"}</title>
         <meta
           key="og:title"
           property="og:title"
           content={"Boombox - Free Discord Music Bot"}
-        />
-        <meta
-          key="description"
-          name="description"
-          property="og:description"
-          content={""}
         />
       </Head>
 
@@ -120,6 +115,7 @@ function PlasmicHomepage__RenderFunc(props: {
           data-plasmic-for-node={forNode}
           className={classNames(
             defaultcss.all,
+            projectcss.all,
             projectcss.root_reset,
             sty.root
           )}
@@ -132,16 +128,25 @@ function PlasmicHomepage__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(defaultcss.all, sty.freeBox__qmWfb)}
+                className={classNames(
+                  defaultcss.all,
+                  projectcss.all,
+                  sty.freeBox__qmWfb
+                )}
               >
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__lPxLd)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.freeBox__lPxLd
+                  )}
                 >
                   <div
                     className={classNames(
                       defaultcss.all,
+                      projectcss.all,
                       defaultcss.__wab_text,
                       sty.text__mveo
                     )}
@@ -149,18 +154,21 @@ function PlasmicHomepage__RenderFunc(props: {
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                     >
+                      <React.Fragment>{""}</React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ textDecoration: "underline" }}
                       >
                         {"Boombox"}
                       </span>
+                      <React.Fragment>{""}</React.Fragment>
                     </span>
                   </div>
 
                   <div
                     className={classNames(
                       defaultcss.all,
+                      projectcss.all,
                       defaultcss.__wab_text,
                       sty.text__obXrB
                     )}
@@ -171,6 +179,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   <div
                     className={classNames(
                       defaultcss.all,
+                      projectcss.all,
                       defaultcss.__wab_text,
                       sty.text__h4MyD
                     )}
@@ -184,12 +193,20 @@ function PlasmicHomepage__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__gtrar)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.freeBox__gtrar
+                  )}
                 >
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__py9Oy)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__py9Oy
+                        )}
                         role={"img"}
                       />
                     }
@@ -201,6 +218,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           defaultcss.__wab_text,
                           sty.text__rkGd3
                         )}
@@ -210,7 +228,11 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg___05Imd)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg___05Imd
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -219,7 +241,11 @@ function PlasmicHomepage__RenderFunc(props: {
                     bgDifference={"bgDifference" as const}
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__womkt)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__womkt
+                        )}
                         role={"img"}
                       />
                     }
@@ -230,6 +256,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           defaultcss.__wab_text,
                           sty.text__fl2Cm
                         )}
@@ -239,7 +266,11 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__r3DuU)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__r3DuU
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -256,7 +287,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__wZKtY)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__wZKtY
+                        )}
                         role={"img"}
                       />
                     }
@@ -267,6 +302,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           defaultcss.__wab_text,
                           sty.text__lqUf3
                         )}
@@ -276,7 +312,11 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg___4X8Ba)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg___4X8Ba
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -284,7 +324,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__bi5F7)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__bi5F7
+                        )}
                         role={"img"}
                       />
                     }
@@ -295,6 +339,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           defaultcss.__wab_text,
                           sty.text__kwcpo
                         )}
@@ -304,7 +349,11 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__scUzc)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__scUzc
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -312,7 +361,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg___5BsU)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg___5BsU
+                        )}
                         role={"img"}
                       />
                     }
@@ -323,6 +376,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           defaultcss.__wab_text,
                           sty.text___059VL
                         )}
@@ -332,7 +386,11 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__dZype)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__dZype
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -340,7 +398,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg___5Grd)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg___5Grd
+                        )}
                         role={"img"}
                       />
                     }
@@ -350,7 +412,11 @@ function PlasmicHomepage__RenderFunc(props: {
                     slot={"Invite To Discord"}
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg___3PPh)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg___3PPh
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -359,14 +425,22 @@ function PlasmicHomepage__RenderFunc(props: {
             >
               <img
                 alt={""}
-                className={classNames(defaultcss.img, sty.img__yAqDz)}
-                src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
+                className={classNames(
+                  defaultcss.img,
+                  projectcss.img,
+                  sty.img__yAqDz
+                )}
+                src={"/plasmic/boombox/images/boomboxPfpChristmas.png"}
               />
             </Navigation>
           </Header>
 
           <div
-            className={classNames(defaultcss.all, sty.freeBox__t72Kq)}
+            className={classNames(
+              defaultcss.all,
+              projectcss.all,
+              sty.freeBox__t72Kq
+            )}
             id={"services" as const}
           >
             <ValuesSection3
@@ -377,17 +451,26 @@ function PlasmicHomepage__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__tz9K9)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.freeBox__tz9K9
+                    )}
                     id={"learn-more" as const}
                   >
                     <div
-                      className={classNames(defaultcss.all, sty.freeBox__o6M6M)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.freeBox__o6M6M
+                      )}
                     >
                       <h2
                         data-plasmic-name={"h2"}
                         data-plasmic-override={overrides.h2}
                         className={classNames(
                           defaultcss.h2,
+                          projectcss.h2,
                           defaultcss.__wab_text,
                           sty.h2
                         )}
@@ -399,6 +482,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     <div
                       className={classNames(
                         defaultcss.all,
+                        projectcss.all,
                         defaultcss.__wab_text,
                         sty.text__pdq14
                       )}
@@ -412,12 +496,20 @@ function PlasmicHomepage__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__c7Sdb)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.freeBox__c7Sdb
+                    )}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__tMcJq)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.freeBox__tMcJq
+                      )}
                     >
                       <Valueprop
                         className={classNames(
@@ -432,6 +524,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           <Icon14Icon
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__bjiu7
                             )}
                             role={"img"}
@@ -441,6 +534,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           <svg
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__x0H1A
                             )}
                             role={"img"}
@@ -463,6 +557,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           <Icon14Icon
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg___7YbBo
                             )}
                             role={"img"}
@@ -472,6 +567,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           <svg
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__fHgdt
                             )}
                             role={"img"}
@@ -494,6 +590,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           <Icon14Icon
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__whoaH
                             )}
                             role={"img"}
@@ -503,6 +600,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           <svg
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__liIJz
                             )}
                             role={"img"}
@@ -525,6 +623,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           <Icon14Icon
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__hkQmM
                             )}
                             role={"img"}
@@ -534,6 +633,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           <svg
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__ozpJn
                             )}
                             role={"img"}
@@ -543,6 +643,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         <div
                           className={classNames(
                             defaultcss.all,
+                            projectcss.all,
                             defaultcss.__wab_text,
                             sty.text__ooYvO
                           )}
@@ -559,6 +660,7 @@ function PlasmicHomepage__RenderFunc(props: {
             <div
               className={classNames(
                 defaultcss.all,
+                projectcss.all,
                 defaultcss.__wab_text,
                 sty.text___39ReI
               )}
@@ -579,7 +681,11 @@ function PlasmicHomepage__RenderFunc(props: {
             art={
               <img
                 alt={""}
-                className={classNames(defaultcss.img, sty.img__mVcIh)}
+                className={classNames(
+                  defaultcss.img,
+                  projectcss.img,
+                  sty.img__mVcIh
+                )}
                 src={"/plasmic/boombox/images/boomboxBottomBannersvg2.svg"}
               />
             }
@@ -589,11 +695,16 @@ function PlasmicHomepage__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__luMkU)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.freeBox__luMkU
+                  )}
                 >
                   <div
                     className={classNames(
                       defaultcss.all,
+                      projectcss.all,
                       defaultcss.__wab_text,
                       sty.text__rQbE
                     )}
@@ -604,6 +715,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   <div
                     className={classNames(
                       defaultcss.all,
+                      projectcss.all,
                       defaultcss.__wab_text,
                       sty.text__scnVr
                     )}
@@ -617,12 +729,20 @@ function PlasmicHomepage__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__jsnUb)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.freeBox__jsnUb
+                  )}
                 >
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__negcK)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__negcK
+                        )}
                         role={"img"}
                       />
                     }
@@ -632,7 +752,11 @@ function PlasmicHomepage__RenderFunc(props: {
                     slot={"Become a Patron->"}
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__sYgzE)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__sYgzE
+                      )}
                       role={"img"}
                     />
                   </Button>

@@ -22,6 +22,7 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
+  min-width: 0;
   margin-top: calc(0px - 32px);
   height: calc(100% + 32px);
 }
@@ -62,6 +63,12 @@
   font-weight: 800;
   line-height: 1;
   color: #000000d9 /* plasmic-token: QkoDPcKK_h86 */;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__mveo {
+    height: 58px;
+    flex-shrink: 0;
+  }
 }
 .text__obXrB {
   font-size: 35px;
@@ -144,6 +151,11 @@
   left: auto;
   right: auto;
   z-index: auto;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .navigation:global(.__wab_instance) {
+    height: 269px;
+  }
 }
 .img__yAqDz {
   object-fit: cover;

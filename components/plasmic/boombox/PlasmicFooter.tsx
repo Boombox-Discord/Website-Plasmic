@@ -87,29 +87,53 @@ function PlasmicFooter__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        defaultcss.all,
+        projectcss.all,
+        projectcss.root_reset,
+        sty.root
+      )}
     >
-      <div className={classNames(defaultcss.all, sty.freeBox__o86QI)}>
+      <div
+        className={classNames(
+          defaultcss.all,
+          projectcss.all,
+          sty.freeBox__o86QI
+        )}
+      >
         <p.Stack
           as={"div"}
           data-plasmic-name={"columns"}
           data-plasmic-override={overrides.columns}
           hasGap={true}
-          className={classNames(defaultcss.all, sty.columns)}
+          className={classNames(defaultcss.all, projectcss.all, sty.columns)}
         >
-          <div className={classNames(defaultcss.all, sty.column__qslx)}>
-            <div className={classNames(defaultcss.all, sty.freeBox__e6YH5)}>
+          <div
+            className={classNames(
+              defaultcss.all,
+              projectcss.all,
+              sty.column__qslx
+            )}
+          >
+            <div
+              className={classNames(
+                defaultcss.all,
+                projectcss.all,
+                sty.freeBox__e6YH5
+              )}
+            >
               <img
                 data-plasmic-name={"img"}
                 data-plasmic-override={overrides.img}
                 alt={""}
-                className={classNames(defaultcss.img, sty.img)}
-                src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
+                className={classNames(defaultcss.img, projectcss.img, sty.img)}
+                src={"/plasmic/boombox/images/boomboxPfpChristmas.png"}
               />
 
               <div
                 className={classNames(
                   defaultcss.all,
+                  projectcss.all,
                   defaultcss.__wab_text,
                   sty.text__stvMs
                 )}
@@ -120,6 +144,7 @@ function PlasmicFooter__RenderFunc(props: {
               <div
                 className={classNames(
                   defaultcss.all,
+                  projectcss.all,
                   defaultcss.__wab_text,
                   sty.text__bXn4O
                 )}
@@ -129,11 +154,21 @@ function PlasmicFooter__RenderFunc(props: {
                 }
               </div>
 
-              <div className={classNames(defaultcss.all, sty.freeBox__iwBk)}>
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  projectcss.all,
+                  sty.freeBox__iwBk
+                )}
+              >
                 <Button
                   children2={
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__l2Yew)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__l2Yew
+                      )}
                       role={"img"}
                     />
                   }
@@ -141,13 +176,21 @@ function PlasmicFooter__RenderFunc(props: {
                   link={"https://github.com/Boombox-Discord" as const}
                   slot={
                     <GithubsvgIcon
-                      className={classNames(defaultcss.all, sty.svg__sdwIv)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__sdwIv
+                      )}
                       role={"img"}
                     />
                   }
                 >
                   <svg
-                    className={classNames(defaultcss.all, sty.svg___71MDa)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg___71MDa
+                    )}
                     role={"img"}
                   />
                 </Button>
@@ -155,7 +198,11 @@ function PlasmicFooter__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__obNys)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__obNys
+                      )}
                       role={"img"}
                     />
                   }
@@ -163,13 +210,21 @@ function PlasmicFooter__RenderFunc(props: {
                   link={"https://discord.gg/HKnyEB9" as const}
                   slot={
                     <DiscordsvgIcon
-                      className={classNames(defaultcss.all, sty.svg__obwr8)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__obwr8
+                      )}
                       role={"img"}
                     />
                   }
                 >
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__xpkuM)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__xpkuM
+                    )}
                     role={"img"}
                   />
                 </Button>
@@ -177,7 +232,11 @@ function PlasmicFooter__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__eQcxX)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__eQcxX
+                      )}
                       role={"img"}
                     />
                   }
@@ -185,13 +244,21 @@ function PlasmicFooter__RenderFunc(props: {
                   link={"https://www.patreon.com/boomboxdev" as const}
                   slot={
                     <IconIcon
-                      className={classNames(defaultcss.all, sty.svg__ntQhd)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__ntQhd
+                      )}
                       role={"img"}
                     />
                   }
                 >
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__lhoDm)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__lhoDm
+                    )}
                     role={"img"}
                   />
                 </Button>
@@ -199,7 +266,11 @@ function PlasmicFooter__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__q1So1)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__q1So1
+                      )}
                       role={"img"}
                     />
                   }
@@ -207,13 +278,21 @@ function PlasmicFooter__RenderFunc(props: {
                   link={"https://twitter.com/BoomboxDiscord" as const}
                   slot={
                     <TwittersvgIcon
-                      className={classNames(defaultcss.all, sty.svg__gepJx)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__gepJx
+                      )}
                       role={"img"}
                     />
                   }
                 >
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__xf5MM)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__xf5MM
+                    )}
                     role={"img"}
                   />
                 </Button>
@@ -221,11 +300,24 @@ function PlasmicFooter__RenderFunc(props: {
             </div>
           </div>
 
-          <div className={classNames(defaultcss.all, sty.column__iuxXf)}>
-            <div className={classNames(defaultcss.all, sty.freeBox__lurdQ)}>
+          <div
+            className={classNames(
+              defaultcss.all,
+              projectcss.all,
+              sty.column__iuxXf
+            )}
+          >
+            <div
+              className={classNames(
+                defaultcss.all,
+                projectcss.all,
+                sty.freeBox__lurdQ
+              )}
+            >
               <div
                 className={classNames(
                   defaultcss.all,
+                  projectcss.all,
                   defaultcss.__wab_text,
                   sty.text__knzcX
                 )}
@@ -236,7 +328,11 @@ function PlasmicFooter__RenderFunc(props: {
               <Button
                 children2={
                   <svg
-                    className={classNames(defaultcss.all, sty.svg___86XUq)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg___86XUq
+                    )}
                     role={"img"}
                   />
                 }
@@ -245,7 +341,11 @@ function PlasmicFooter__RenderFunc(props: {
                 slot={"Learn More"}
               >
                 <svg
-                  className={classNames(defaultcss.all, sty.svg__frWkq)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.svg__frWkq
+                  )}
                   role={"img"}
                 />
               </Button>
@@ -253,7 +353,11 @@ function PlasmicFooter__RenderFunc(props: {
               <Button
                 children2={
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__s4Mb6)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__s4Mb6
+                    )}
                     role={"img"}
                   />
                 }
@@ -262,7 +366,11 @@ function PlasmicFooter__RenderFunc(props: {
                 slot={"Commands"}
               >
                 <svg
-                  className={classNames(defaultcss.all, sty.svg___0UEj)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.svg___0UEj
+                  )}
                   role={"img"}
                 />
               </Button>
@@ -270,7 +378,11 @@ function PlasmicFooter__RenderFunc(props: {
               <Button
                 children2={
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__xuy0K)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__xuy0K
+                    )}
                     role={"img"}
                   />
                 }
@@ -279,7 +391,11 @@ function PlasmicFooter__RenderFunc(props: {
                 slot={"Patreon"}
               >
                 <svg
-                  className={classNames(defaultcss.all, sty.svg___63EXk)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.svg___63EXk
+                  )}
                   role={"img"}
                 />
               </Button>
@@ -287,7 +403,11 @@ function PlasmicFooter__RenderFunc(props: {
               <Button
                 children2={
                   <svg
-                    className={classNames(defaultcss.all, sty.svg___1M3Wq)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg___1M3Wq
+                    )}
                     role={"img"}
                   />
                 }
@@ -296,18 +416,35 @@ function PlasmicFooter__RenderFunc(props: {
                 slot={"Invite Link"}
               >
                 <svg
-                  className={classNames(defaultcss.all, sty.svg__ubKjL)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.svg__ubKjL
+                  )}
                   role={"img"}
                 />
               </Button>
             </div>
           </div>
 
-          <div className={classNames(defaultcss.all, sty.column__pVkR)}>
-            <div className={classNames(defaultcss.all, sty.freeBox__uYVh)}>
+          <div
+            className={classNames(
+              defaultcss.all,
+              projectcss.all,
+              sty.column__pVkR
+            )}
+          >
+            <div
+              className={classNames(
+                defaultcss.all,
+                projectcss.all,
+                sty.freeBox__uYVh
+              )}
+            >
               <div
                 className={classNames(
                   defaultcss.all,
+                  projectcss.all,
                   defaultcss.__wab_text,
                   sty.text__mJzdm
                 )}
@@ -318,7 +455,11 @@ function PlasmicFooter__RenderFunc(props: {
               <Button
                 children2={
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__qdp1M)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__qdp1M
+                    )}
                     role={"img"}
                   />
                 }
@@ -327,7 +468,11 @@ function PlasmicFooter__RenderFunc(props: {
                 slot={"Server Status"}
               >
                 <svg
-                  className={classNames(defaultcss.all, sty.svg__ivQiv)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.svg__ivQiv
+                  )}
                   role={"img"}
                 />
               </Button>
@@ -335,7 +480,11 @@ function PlasmicFooter__RenderFunc(props: {
               <Button
                 children2={
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__kyjYl)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__kyjYl
+                    )}
                     role={"img"}
                   />
                 }
@@ -344,7 +493,11 @@ function PlasmicFooter__RenderFunc(props: {
                 slot={"Support Server"}
               >
                 <svg
-                  className={classNames(defaultcss.all, sty.svg__zxgMf)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.svg__zxgMf
+                  )}
                   role={"img"}
                 />
               </Button>
@@ -352,7 +505,11 @@ function PlasmicFooter__RenderFunc(props: {
               <Button
                 children2={
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__qGwNg)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__qGwNg
+                    )}
                     role={"img"}
                   />
                 }
@@ -361,14 +518,24 @@ function PlasmicFooter__RenderFunc(props: {
                 slot={"Patreon"}
               >
                 <svg
-                  className={classNames(defaultcss.all, sty.svg__xxjxn)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.svg__xxjxn
+                  )}
                   role={"img"}
                 />
               </Button>
             </div>
           </div>
 
-          <div className={classNames(defaultcss.all, sty.column__yvAnQ)}>
+          <div
+            className={classNames(
+              defaultcss.all,
+              projectcss.all,
+              sty.column__yvAnQ
+            )}
+          >
             <Button
               className={classNames("__wab_instance", sty.button__hnmY)}
               link={
@@ -376,7 +543,11 @@ function PlasmicFooter__RenderFunc(props: {
               }
               slot={
                 <DigitalOceanIcon
-                  className={classNames(defaultcss.all, sty.svg__uvYO)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.svg__uvYO
+                  )}
                   role={"img"}
                 />
               }
@@ -388,6 +559,7 @@ function PlasmicFooter__RenderFunc(props: {
       <div
         className={classNames(
           defaultcss.all,
+          projectcss.all,
           defaultcss.__wab_text,
           sty.text___5GwXa
         )}

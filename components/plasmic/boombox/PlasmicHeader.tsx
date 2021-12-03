@@ -95,12 +95,17 @@ function PlasmicHeader__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        defaultcss.all,
+        projectcss.all,
+        projectcss.root_reset,
+        sty.root
+      )}
     >
       <div
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
-        className={classNames(defaultcss.all, sty.freeBox)}
+        className={classNames(defaultcss.all, projectcss.all, sty.freeBox)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
@@ -112,7 +117,11 @@ function PlasmicHeader__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__n05Wi)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__n05Wi
+                        )}
                         role={"img"}
                       />
                     }
@@ -121,7 +130,11 @@ function PlasmicHeader__RenderFunc(props: {
                     slot={"Services"}
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__mM3Cl)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__mM3Cl
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -129,7 +142,11 @@ function PlasmicHeader__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__fYfNx)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__fYfNx
+                        )}
                         role={"img"}
                       />
                     }
@@ -138,7 +155,11 @@ function PlasmicHeader__RenderFunc(props: {
                     slot={"Features"}
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__vg2D)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__vg2D
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -146,7 +167,11 @@ function PlasmicHeader__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg___9Uad2)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg___9Uad2
+                        )}
                         role={"img"}
                       />
                     }
@@ -155,7 +180,11 @@ function PlasmicHeader__RenderFunc(props: {
                     slot={"Company"}
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__nppUs)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__nppUs
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -163,7 +192,11 @@ function PlasmicHeader__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__hrJbr)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__hrJbr
+                        )}
                         role={"img"}
                       />
                     }
@@ -172,7 +205,11 @@ function PlasmicHeader__RenderFunc(props: {
                     slot={"Contact"}
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__gn0BF)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__gn0BF
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -180,7 +217,11 @@ function PlasmicHeader__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__hjCoB)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__hjCoB
+                        )}
                         role={"img"}
                       />
                     }
@@ -189,7 +230,11 @@ function PlasmicHeader__RenderFunc(props: {
                     slot={"Log in"}
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__d4FRn)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__d4FRn
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -197,7 +242,11 @@ function PlasmicHeader__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__mSoi4)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__mSoi4
+                        )}
                         role={"img"}
                       />
                     }
@@ -206,7 +255,11 @@ function PlasmicHeader__RenderFunc(props: {
                     slot={"Sign up"}
                   >
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__lGxF)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__lGxF
+                      )}
                       role={"img"}
                     />
                   </Button>
@@ -215,7 +268,11 @@ function PlasmicHeader__RenderFunc(props: {
             >
               <img
                 alt={""}
-                className={classNames(defaultcss.img, sty.img__u2I2)}
+                className={classNames(
+                  defaultcss.img,
+                  projectcss.img,
+                  sty.img__u2I2
+                )}
                 src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
               />
             </Navigation>
@@ -228,13 +285,13 @@ function PlasmicHeader__RenderFunc(props: {
       <div
         data-plasmic-name={"hero3"}
         data-plasmic-override={overrides.hero3}
-        className={classNames(defaultcss.all, sty.hero3)}
+        className={classNames(defaultcss.all, projectcss.all, sty.hero3)}
       >
         <img
           data-plasmic-name={"img"}
           data-plasmic-override={overrides.img}
           alt={""}
-          className={classNames(defaultcss.img, sty.img)}
+          className={classNames(defaultcss.img, projectcss.img, sty.img)}
           src={"/plasmic/boombox/images/boomboxBannersvg.svg"}
         />
 
@@ -243,7 +300,7 @@ function PlasmicHeader__RenderFunc(props: {
           data-plasmic-name={"foreground"}
           data-plasmic-override={overrides.foreground}
           hasGap={true}
-          className={classNames(defaultcss.all, sty.foreground)}
+          className={classNames(defaultcss.all, projectcss.all, sty.foreground)}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
@@ -251,19 +308,32 @@ function PlasmicHeader__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__pa67R)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.freeBox__pa67R
+                  )}
                 >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__kd1I3)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.freeBox__kd1I3
+                    )}
                   >
                     <div
-                      className={classNames(defaultcss.all, sty.freeBox__afdnX)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.freeBox__afdnX
+                      )}
                     >
                       <div
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           defaultcss.__wab_text,
                           sty.text__quc0T
                         )}
@@ -275,6 +345,7 @@ function PlasmicHeader__RenderFunc(props: {
                     <div
                       className={classNames(
                         defaultcss.all,
+                        projectcss.all,
                         defaultcss.__wab_text,
                         sty.text__p5DVy
                       )}
@@ -291,12 +362,14 @@ function PlasmicHeader__RenderFunc(props: {
                         >
                           {"adapt"}
                         </span>
+                        <React.Fragment>{""}</React.Fragment>
                       </span>
                     </div>
 
                     <div
                       className={classNames(
                         defaultcss.all,
+                        projectcss.all,
                         defaultcss.__wab_text,
                         sty.text__dFR6
                       )}
@@ -310,12 +383,20 @@ function PlasmicHeader__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__hzqpT)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.freeBox__hzqpT
+                    )}
                   >
                     <Button
                       children2={
                         <svg
-                          className={classNames(defaultcss.all, sty.svg__b8W3G)}
+                          className={classNames(
+                            defaultcss.all,
+                            projectcss.all,
+                            sty.svg__b8W3G
+                          )}
                           role={"img"}
                         />
                       }
@@ -328,6 +409,7 @@ function PlasmicHeader__RenderFunc(props: {
                         <div
                           className={classNames(
                             defaultcss.all,
+                            projectcss.all,
                             defaultcss.__wab_text,
                             sty.text__qyLhE
                           )}
@@ -337,7 +419,11 @@ function PlasmicHeader__RenderFunc(props: {
                       }
                     >
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__jH4IK)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__jH4IK
+                        )}
                         role={"img"}
                       />
                     </Button>
@@ -346,7 +432,11 @@ function PlasmicHeader__RenderFunc(props: {
                       bgDifference={"bgDifference" as const}
                       children2={
                         <svg
-                          className={classNames(defaultcss.all, sty.svg__tEuOp)}
+                          className={classNames(
+                            defaultcss.all,
+                            projectcss.all,
+                            sty.svg__tEuOp
+                          )}
                           role={"img"}
                         />
                       }
@@ -359,6 +449,7 @@ function PlasmicHeader__RenderFunc(props: {
                         <div
                           className={classNames(
                             defaultcss.all,
+                            projectcss.all,
                             defaultcss.__wab_text,
                             sty.text__minCm
                           )}
@@ -368,7 +459,11 @@ function PlasmicHeader__RenderFunc(props: {
                       }
                     >
                       <svg
-                        className={classNames(defaultcss.all, sty.svg__jtKVr)}
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__jtKVr
+                        )}
                         role={"img"}
                       />
                     </Button>
@@ -378,19 +473,32 @@ function PlasmicHeader__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__xmCk)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.freeBox__xmCk
+                  )}
                 >
                   <div
-                    className={classNames(defaultcss.all, sty.freeBox___5JBhu)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.freeBox___5JBhu
+                    )}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__eEo1)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.freeBox__eEo1
+                      )}
                     >
                       <div
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           defaultcss.__wab_text,
                           sty.text__w9VVo
                         )}
@@ -403,6 +511,7 @@ function PlasmicHeader__RenderFunc(props: {
                         hasGap={true}
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           sty.freeBox__wbTz
                         )}
                       >
@@ -411,6 +520,7 @@ function PlasmicHeader__RenderFunc(props: {
                             <svg
                               className={classNames(
                                 defaultcss.all,
+                                projectcss.all,
                                 sty.svg__jdJ0J
                               )}
                               role={"img"}
@@ -427,6 +537,7 @@ function PlasmicHeader__RenderFunc(props: {
                           <svg
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__szf8P
                             )}
                             role={"img"}
@@ -438,6 +549,7 @@ function PlasmicHeader__RenderFunc(props: {
                             <svg
                               className={classNames(
                                 defaultcss.all,
+                                projectcss.all,
                                 sty.svg__yqopV
                               )}
                               role={"img"}
@@ -454,6 +566,7 @@ function PlasmicHeader__RenderFunc(props: {
                           <svg
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__tEeqB
                             )}
                             role={"img"}
@@ -466,6 +579,7 @@ function PlasmicHeader__RenderFunc(props: {
                         hasGap={true}
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           sty.freeBox__y8YIi
                         )}
                       >
@@ -479,6 +593,7 @@ function PlasmicHeader__RenderFunc(props: {
                         <div
                           className={classNames(
                             defaultcss.all,
+                            projectcss.all,
                             defaultcss.__wab_text,
                             sty.text__qUrLh
                           )}
@@ -499,6 +614,7 @@ function PlasmicHeader__RenderFunc(props: {
                         hasGap={true}
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           sty.freeBox__liZfg
                         )}
                       >
@@ -529,6 +645,7 @@ function PlasmicHeader__RenderFunc(props: {
                           <svg
                             className={classNames(
                               defaultcss.all,
+                              projectcss.all,
                               sty.svg__zn3FV
                             )}
                             role={"img"}
@@ -542,7 +659,11 @@ function PlasmicHeader__RenderFunc(props: {
                         slot={"Start your account"}
                       >
                         <svg
-                          className={classNames(defaultcss.all, sty.svg__ghn0L)}
+                          className={classNames(
+                            defaultcss.all,
+                            projectcss.all,
+                            sty.svg__ghn0L
+                          )}
                           role={"img"}
                         />
                       </Button>
@@ -556,11 +677,16 @@ function PlasmicHeader__RenderFunc(props: {
                     />
 
                     <div
-                      className={classNames(defaultcss.all, sty.freeBox__frUn)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.freeBox__frUn
+                      )}
                     >
                       <div
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           defaultcss.__wab_text,
                           sty.text__iYeVc
                         )}

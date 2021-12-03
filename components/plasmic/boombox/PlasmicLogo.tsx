@@ -81,9 +81,15 @@ function PlasmicLogo__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       alt={""}
-      className={classNames(defaultcss.img, projectcss.root_reset, sty.root, {
-        [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
-      })}
+      className={classNames(
+        defaultcss.img,
+        projectcss.img,
+        projectcss.root_reset,
+        sty.root,
+        {
+          [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
+        }
+      )}
       src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
     />
   ) as React.ReactElement | null;

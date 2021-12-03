@@ -153,6 +153,11 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.14.9.tgz#6654d171b2024f6d8ee151bf2509699919131d48"
   integrity sha512-pQYxPY0UP6IHISRitNe8bsijHex4TWZXi2HwKVsjPiltzlhse2znVcm9Ace510VT1kxIHjGJCZZQBX2gJDbo0g==
 
+"@babel/helper-validator-identifier@^7.15.7":
+  version "7.15.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.15.7.tgz#220df993bfe904a4a6b02ab4f3385a5ebf6e2389"
+  integrity sha512-K4JvCtQqad9OY2+yTU8w+E82ywk/fe+ELNlt1G8z3bVGlZfn/hOcQQsUhGhW/N+tb3fxK800wLtKOE/aM0m72w==
+
 "@babel/helper-validator-option@^7.14.5":
   version "7.14.5"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-option/-/helper-validator-option-7.14.5.tgz#6e72a1fff18d5dfcb878e1e62f1a021c4b72d5a3"
@@ -240,6 +245,14 @@
   integrity sha512-OBvfqnllOIdX4ojTHpwZbpvz4j3EWyjkZEdmjH0/cgsd6QOdSgU8rLSk6ard/pcW7rlmjdVSX/AWOaORR1uNOQ==
   dependencies:
     "@babel/helper-validator-identifier" "^7.14.9"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.12.1":
+  version "7.16.0"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.16.0.tgz#db3b313804f96aadd0b776c4823e127ad67289ba"
+  integrity sha512-PJgg/k3SdLsGb3hhisFvtLOw5ts113klrpLuIPtCJIU+BB24fqq6lf8RWqKJEjzqXR9AEH1rIb5XTqwBHB+kQg==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
 "@dabh/diagnostics@^2.0.2":
@@ -426,14 +439,16 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@plasmicapp/cli@^0.1.161":
-  version "0.1.161"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.161.tgz#004655c6781e8c71f4eb3f9158d4e2e7c004262c"
-  integrity sha512-q9JbFlOalBGGVut0O5bWu9eeffn3UWJKg2bRSz94R5i2bZRvOqz3nej5Q+rWC8BdrXP6DxQl/KQAgC3Wc3ZfFw==
+"@plasmicapp/cli@^0.1.166":
+  version "0.1.166"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.166.tgz#be7c0a0e68c8d31ab175e0c10689b3bca0a558ab"
+  integrity sha512-pm/9vZtsW2UylGatPfRESKuRhlLpe5SQPiOHDtufHJfHOYmUJrNhuIEtI+IWzuxF118GlZVcY9Ofd52qpgAgxA==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/generator" "^7.12.1"
-    "@plasmicapp/code-merger" "^0.0.31"
+    "@babel/parser" "^7.12.3"
+    "@babel/traverse" "^7.12.1"
+    "@plasmicapp/code-merger" "^0.0.33"
     "@sentry/node" "^5.19.2"
     "@types/socket.io-client" "^1.4.34"
     axios "^0.21.1"
@@ -461,15 +476,16 @@
     wrap-ansi "^7.0.0"
     yargs "^15.4.1"
 
-"@plasmicapp/code-merger@^0.0.31":
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/code-merger/-/code-merger-0.0.31.tgz#fdbab02229458aff2139f72258c6af46723ffec1"
-  integrity sha512-0s+jHEkwFQ220hIG1p76kTTLL8Cr5QsEFuwnrt2Q+nQHDeLwL9Mt8w2Ro1mBKNNac9/hdqC0eVPzVLbWhxWf/g==
+"@plasmicapp/code-merger@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/code-merger/-/code-merger-0.0.33.tgz#92d1f5b3dbe81b1a8b0e26a949d27d8619531e4c"
+  integrity sha512-FTO1MwoQ3s+Sh4Fqc8UJ0b1LZlv/0GidphucxvdDWB6zD98KhrTw3t38n8f4/cfw1SosTbd4uQ7Cn3z/P5Fc0Q==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/generator" "^7.12.1"
     "@babel/parser" "^7.12.3"
     "@babel/traverse" "^7.12.1"
+    "@babel/types" "^7.12.1"
     "@types/babel__core" "^7.1.14"
     "@types/babel__generator" "^7.6.2"
     "@types/babel__parser" "^7.1.1"
@@ -478,10 +494,10 @@
     lodash "^4.17.19"
     prettier "^2.0.5"
 
-"@plasmicapp/react-web@^0.2.67":
-  version "0.2.67"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/react-web/-/react-web-0.2.67.tgz#69dfb244e6dff2af036c11f2063b3ce1197d5327"
-  integrity sha512-vBJBwI5UO/va9PdtXXXNsb9BFoLMg28tlruxG/fz9oNmueffC0VehNQHL8UVBzixu7UUiaRqq4zubFGIHFbOhA==
+"@plasmicapp/react-web@^0.2.90":
+  version "0.2.90"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/react-web/-/react-web-0.2.90.tgz#5bb410ce91ab0f47b8c770f082ba0f60c29078ee"
+  integrity sha512-dFnslQ4tpvTl8qS+yab7SYIYBN+hE95PIjEJdRkagNnAIzFNFPeqzX9Nv5qFiDxJ6CBn/Po1InbkIMXqg88Wjw==
   dependencies:
     classnames "^2.2.6"
     react-aria "^3.7.0"

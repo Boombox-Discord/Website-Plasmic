@@ -121,50 +121,73 @@ function PlasmicValueprop__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__card]: hasVariant(variants, "card", "card"),
-        [sty.root__card_vertical]:
-          hasVariant(variants, "card", "card") &&
-          hasVariant(variants, "vertical", "vertical"),
-        [sty.root__flatIcon]: hasVariant(variants, "flatIcon", "flatIcon"),
-        [sty.root__flat]: hasVariant(variants, "flat", "flat"),
-        [sty.root__justDescription]: hasVariant(
-          variants,
-          "justDescription",
-          "justDescription"
-        ),
-        [sty.root__vertical]: hasVariant(variants, "vertical", "vertical")
-      })}
-    >
-      <div
-        className={classNames(defaultcss.all, sty.freeBox__kUTww, {
-          [sty.freeBox__card__kUTwweyWcv]: hasVariant(variants, "card", "card"),
-          [sty.freeBox__card_vertical__kUTwweyWcvCnp7M]:
+      className={classNames(
+        defaultcss.all,
+        projectcss.all,
+        projectcss.root_reset,
+        sty.root,
+        {
+          [sty.root__card]: hasVariant(variants, "card", "card"),
+          [sty.root__card_vertical]:
             hasVariant(variants, "card", "card") &&
             hasVariant(variants, "vertical", "vertical"),
-          [sty.freeBox__color_lightQuarternary__kUTwwhH9Av]: hasVariant(
+          [sty.root__flatIcon]: hasVariant(variants, "flatIcon", "flatIcon"),
+          [sty.root__flat]: hasVariant(variants, "flat", "flat"),
+          [sty.root__justDescription]: hasVariant(
             variants,
-            "color",
-            "lightQuarternary"
+            "justDescription",
+            "justDescription"
           ),
-          [sty.freeBox__flatIcon__kUTww7Wc8I]: hasVariant(
-            variants,
-            "flatIcon",
-            "flatIcon"
-          ),
-          [sty.freeBox__flat__kUTwwrUcRu]: hasVariant(variants, "flat", "flat"),
-          [sty.freeBox__vertical__kUTwwcnp7M]: hasVariant(
-            variants,
-            "vertical",
-            "vertical"
-          )
-        })}
+          [sty.root__vertical]: hasVariant(variants, "vertical", "vertical")
+        }
+      )}
+    >
+      <div
+        className={classNames(
+          defaultcss.all,
+          projectcss.all,
+          sty.freeBox__kUTww,
+          {
+            [sty.freeBox__card__kUTwweyWcv]: hasVariant(
+              variants,
+              "card",
+              "card"
+            ),
+            [sty.freeBox__card_vertical__kUTwweyWcvCnp7M]:
+              hasVariant(variants, "card", "card") &&
+              hasVariant(variants, "vertical", "vertical"),
+            [sty.freeBox__color_lightQuarternary__kUTwwhH9Av]: hasVariant(
+              variants,
+              "color",
+              "lightQuarternary"
+            ),
+            [sty.freeBox__flatIcon__kUTww7Wc8I]: hasVariant(
+              variants,
+              "flatIcon",
+              "flatIcon"
+            ),
+            [sty.freeBox__flat__kUTwwrUcRu]: hasVariant(
+              variants,
+              "flat",
+              "flat"
+            ),
+            [sty.freeBox__vertical__kUTwwcnp7M]: hasVariant(
+              variants,
+              "vertical",
+              "vertical"
+            )
+          }
+        )}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
             <img
               alt={""}
-              className={classNames(defaultcss.img, sty.img__sm8Vn)}
+              className={classNames(
+                defaultcss.img,
+                projectcss.img,
+                sty.img__sm8Vn
+              )}
               src={
                 "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/twitter/281/red-apple_1f34e.png" as const
               }
@@ -177,41 +200,50 @@ function PlasmicValueprop__RenderFunc(props: {
 
       {false ? (
         <div
-          className={classNames(defaultcss.all, sty.freeBox__krtgb, {
-            [sty.freeBox__card__krtgbeyWcv]: hasVariant(
-              variants,
-              "card",
-              "card"
-            ),
-            [sty.freeBox__card_vertical__krtgbeyWcvCnp7M]:
-              hasVariant(variants, "card", "card") &&
-              hasVariant(variants, "vertical", "vertical"),
-            [sty.freeBox__color_lightQuarternary__krtgbhH9Av]: hasVariant(
-              variants,
-              "color",
-              "lightQuarternary"
-            ),
-            [sty.freeBox__flatIcon__krtgb7Wc8I]: hasVariant(
-              variants,
-              "flatIcon",
-              "flatIcon"
-            ),
-            [sty.freeBox__flat__krtgbrUcRu]: hasVariant(
-              variants,
-              "flat",
-              "flat"
-            ),
-            [sty.freeBox__vertical__krtgbcnp7M]: hasVariant(
-              variants,
-              "vertical",
-              "vertical"
-            )
-          })}
+          className={classNames(
+            defaultcss.all,
+            projectcss.all,
+            sty.freeBox__krtgb,
+            {
+              [sty.freeBox__card__krtgbeyWcv]: hasVariant(
+                variants,
+                "card",
+                "card"
+              ),
+              [sty.freeBox__card_vertical__krtgbeyWcvCnp7M]:
+                hasVariant(variants, "card", "card") &&
+                hasVariant(variants, "vertical", "vertical"),
+              [sty.freeBox__color_lightQuarternary__krtgbhH9Av]: hasVariant(
+                variants,
+                "color",
+                "lightQuarternary"
+              ),
+              [sty.freeBox__flatIcon__krtgb7Wc8I]: hasVariant(
+                variants,
+                "flatIcon",
+                "flatIcon"
+              ),
+              [sty.freeBox__flat__krtgbrUcRu]: hasVariant(
+                variants,
+                "flat",
+                "flat"
+              ),
+              [sty.freeBox__vertical__krtgbcnp7M]: hasVariant(
+                variants,
+                "vertical",
+                "vertical"
+              )
+            }
+          )}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <svg
-                className={classNames(defaultcss.all, sty.svg__klHm)}
+                className={classNames(
+                  defaultcss.all,
+                  projectcss.all,
+                  sty.svg__klHm
+                )}
                 role={"img"}
               />
             ),
@@ -224,14 +256,23 @@ function PlasmicValueprop__RenderFunc(props: {
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.freeBox__yIntA, {
-          [sty.freeBox__flat__yIntArUcRu]: hasVariant(variants, "flat", "flat"),
-          [sty.freeBox__justDescription__yIntAtgTx]: hasVariant(
-            variants,
-            "justDescription",
-            "justDescription"
-          )
-        })}
+        className={classNames(
+          defaultcss.all,
+          projectcss.all,
+          sty.freeBox__yIntA,
+          {
+            [sty.freeBox__flat__yIntArUcRu]: hasVariant(
+              variants,
+              "flat",
+              "flat"
+            ),
+            [sty.freeBox__justDescription__yIntAtgTx]: hasVariant(
+              variants,
+              "justDescription",
+              "justDescription"
+            )
+          }
+        )}
       >
         {(
           hasVariant(variants, "justDescription", "justDescription")

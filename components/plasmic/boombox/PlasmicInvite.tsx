@@ -78,17 +78,14 @@ function PlasmicInvite__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <title key="title">{"Boombox Discord | Invite Link"}</title>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">
+          {"Boombox - Free Discord Music Bot | Invite Link"}
+        </title>
         <meta
           key="og:title"
           property="og:title"
-          content={"Boombox Discord | Invite Link"}
-        />
-        <meta
-          key="description"
-          name="description"
-          property="og:description"
-          content={""}
+          content={"Boombox - Free Discord Music Bot | Invite Link"}
         />
       </Head>
 
@@ -106,6 +103,7 @@ function PlasmicInvite__RenderFunc(props: {
           data-plasmic-for-node={forNode}
           className={classNames(
             defaultcss.all,
+            projectcss.all,
             projectcss.root_reset,
             sty.root
           )}
@@ -120,7 +118,11 @@ function PlasmicInvite__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__cqxrj)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__cqxrj
+                      )}
                       role={"img"}
                     />
                   }
@@ -131,6 +133,7 @@ function PlasmicInvite__RenderFunc(props: {
                     <div
                       className={classNames(
                         defaultcss.all,
+                        projectcss.all,
                         defaultcss.__wab_text,
                         sty.text__lhC9O
                       )}
@@ -140,7 +143,11 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                 >
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__ffSzI)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__ffSzI
+                    )}
                     role={"img"}
                   />
                 </Button>
@@ -148,7 +155,11 @@ function PlasmicInvite__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__wDeI)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__wDeI
+                      )}
                       role={"img"}
                     />
                   }
@@ -159,6 +170,7 @@ function PlasmicInvite__RenderFunc(props: {
                     <div
                       className={classNames(
                         defaultcss.all,
+                        projectcss.all,
                         defaultcss.__wab_text,
                         sty.text__i36SS
                       )}
@@ -168,7 +180,11 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                 >
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__cobLi)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__cobLi
+                    )}
                     role={"img"}
                   />
                 </Button>
@@ -176,7 +192,11 @@ function PlasmicInvite__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__eFg80)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__eFg80
+                      )}
                       role={"img"}
                     />
                   }
@@ -187,6 +207,7 @@ function PlasmicInvite__RenderFunc(props: {
                     <div
                       className={classNames(
                         defaultcss.all,
+                        projectcss.all,
                         defaultcss.__wab_text,
                         sty.text___9L2Tc
                       )}
@@ -196,7 +217,11 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                 >
                   <svg
-                    className={classNames(defaultcss.all, sty.svg___0S80E)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg___0S80E
+                    )}
                     role={"img"}
                   />
                 </Button>
@@ -204,7 +229,11 @@ function PlasmicInvite__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(defaultcss.all, sty.svg__ijDce)}
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        sty.svg__ijDce
+                      )}
                       role={"img"}
                     />
                   }
@@ -214,7 +243,11 @@ function PlasmicInvite__RenderFunc(props: {
                   slot={"Support Server"}
                 >
                   <svg
-                    className={classNames(defaultcss.all, sty.svg__qyQK)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__qyQK
+                    )}
                     role={"img"}
                   />
                 </Button>
@@ -231,16 +264,25 @@ function PlasmicInvite__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__k7M80)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.freeBox__k7M80
+                  )}
                 >
                   <div
-                    className={classNames(defaultcss.all, sty.freeBox__gpDgL)}
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.freeBox__gpDgL
+                    )}
                   >
                     <h2
                       data-plasmic-name={"h2"}
                       data-plasmic-override={overrides.h2}
                       className={classNames(
                         defaultcss.h2,
+                        projectcss.h2,
                         defaultcss.__wab_text,
                         sty.h2
                       )}
@@ -252,6 +294,7 @@ function PlasmicInvite__RenderFunc(props: {
                   <div
                     className={classNames(
                       defaultcss.all,
+                      projectcss.all,
                       defaultcss.__wab_text,
                       sty.text__vsBn0
                     )}
@@ -265,7 +308,11 @@ function PlasmicInvite__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__mmTsb)}
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.freeBox__mmTsb
+                  )}
                 >
                   <Button
                     className={classNames("__wab_instance", sty.button__ikxGl)}
@@ -277,6 +324,7 @@ function PlasmicInvite__RenderFunc(props: {
                       <div
                         className={classNames(
                           defaultcss.all,
+                          projectcss.all,
                           defaultcss.__wab_text,
                           sty.text___8QMbN
                         )}
