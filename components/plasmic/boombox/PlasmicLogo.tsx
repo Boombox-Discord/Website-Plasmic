@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
 import * as sty from "./PlasmicLogo.module.css"; // plasmic-import: vwbA6W7e_64X/css
 
@@ -81,15 +81,9 @@ function PlasmicLogo__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       alt={""}
-      className={classNames(
-        defaultcss.img,
-        projectcss.img,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
-        }
-      )}
+      className={classNames(projectcss.img, projectcss.root_reset, sty.root, {
+        [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
+      })}
       src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
     />
   ) as React.ReactElement | null;

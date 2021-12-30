@@ -36,10 +36,10 @@ import {
 import Logo from "../../Logo"; // plasmic-import: vwbA6W7e_64X/component
 import Button from "../../Button"; // plasmic-import: OTuzjleeHGwD/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: fexfuEBwKf3q/globalVariant
+import { useScreenVariants as useScreenVariantsfexfuEBwKf3Q } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: fexfuEBwKf3q/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
 import * as sty from "./PlasmicNavigation.module.css"; // plasmic-import: YifvoXt3BSlX/css
 
@@ -104,7 +104,7 @@ function PlasmicNavigation__RenderFunc(props: {
   const { variants, args, overrides, forNode, dataFetches } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsfexfuEBwKf3Q()
   });
 
   return (
@@ -115,45 +115,30 @@ function PlasmicNavigation__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root__boomboxBg]: hasVariant(variants, "boomboxBg", "boomboxBg"),
-          [sty.root__centered]: hasVariant(variants, "centered", "centered"),
-          [sty.root__dark]: hasVariant(variants, "dark", "dark"),
-          [sty.root__hideCta]: hasVariant(variants, "hideCta", "hideCta"),
-          [sty.root__lightBg]: hasVariant(variants, "lightBg", "lightBg")
-        }
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__boomboxBg]: hasVariant(variants, "boomboxBg", "boomboxBg"),
+        [sty.root__centered]: hasVariant(variants, "centered", "centered"),
+        [sty.root__dark]: hasVariant(variants, "dark", "dark"),
+        [sty.root__hideCta]: hasVariant(variants, "hideCta", "hideCta"),
+        [sty.root__lightBg]: hasVariant(variants, "lightBg", "lightBg")
+      })}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__l3WLd,
-          {
-            [sty.freeBox__boomboxBg__l3WLda7IJ0]: hasVariant(
-              variants,
-              "boomboxBg",
-              "boomboxBg"
-            ),
-            [sty.freeBox__centered__l3WLdJ5RfS]: hasVariant(
-              variants,
-              "centered",
-              "centered"
-            ),
-            [sty.freeBox__dark__l3WLdh0Ybq]: hasVariant(
-              variants,
-              "dark",
-              "dark"
-            )
-          }
-        )}
+        className={classNames(projectcss.all, sty.freeBox__l3WLd, {
+          [sty.freeBox__boomboxBg__l3WLda7IJ0]: hasVariant(
+            variants,
+            "boomboxBg",
+            "boomboxBg"
+          ),
+          [sty.freeBox__centered__l3WLdJ5RfS]: hasVariant(
+            variants,
+            "centered",
+            "centered"
+          ),
+          [sty.freeBox__dark__l3WLdh0Ybq]: hasVariant(variants, "dark", "dark")
+        })}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
@@ -166,18 +151,13 @@ function PlasmicNavigation__RenderFunc(props: {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__pcUao,
-            {
-              [sty.freeBox__centered__pcUaoJ5RfS]: hasVariant(
-                variants,
-                "centered",
-                "centered"
-              )
-            }
-          )}
+          className={classNames(projectcss.all, sty.freeBox__pcUao, {
+            [sty.freeBox__centered__pcUaoJ5RfS]: hasVariant(
+              variants,
+              "centered",
+              "centered"
+            )
+          })}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
@@ -185,11 +165,7 @@ function PlasmicNavigation__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__l8SzK
-                      )}
+                      className={classNames(projectcss.all, sty.svg__l8SzK)}
                       role={"img"}
                     />
                   }
@@ -198,11 +174,7 @@ function PlasmicNavigation__RenderFunc(props: {
                   slot={"Services"}
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg__afQK
-                    )}
+                    className={classNames(projectcss.all, sty.svg__afQK)}
                     role={"img"}
                   />
                 </Button>
@@ -210,11 +182,7 @@ function PlasmicNavigation__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__nkc6G
-                      )}
+                      className={classNames(projectcss.all, sty.svg__nkc6G)}
                       role={"img"}
                     />
                   }
@@ -223,11 +191,7 @@ function PlasmicNavigation__RenderFunc(props: {
                   slot={"Features"}
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg__ywWVs
-                    )}
+                    className={classNames(projectcss.all, sty.svg__ywWVs)}
                     role={"img"}
                   />
                 </Button>
@@ -235,11 +199,7 @@ function PlasmicNavigation__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__aVzh5
-                      )}
+                      className={classNames(projectcss.all, sty.svg__aVzh5)}
                       role={"img"}
                     />
                   }
@@ -248,11 +208,7 @@ function PlasmicNavigation__RenderFunc(props: {
                   slot={"Company"}
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg__atU7K
-                    )}
+                    className={classNames(projectcss.all, sty.svg__atU7K)}
                     role={"img"}
                   />
                 </Button>
@@ -260,11 +216,7 @@ function PlasmicNavigation__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__bbQaD
-                      )}
+                      className={classNames(projectcss.all, sty.svg__bbQaD)}
                       role={"img"}
                     />
                   }
@@ -273,11 +225,7 @@ function PlasmicNavigation__RenderFunc(props: {
                   slot={"Contact"}
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg__pacPo
-                    )}
+                    className={classNames(projectcss.all, sty.svg__pacPo)}
                     role={"img"}
                   />
                 </Button>
@@ -285,11 +233,7 @@ function PlasmicNavigation__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__i5C1W
-                      )}
+                      className={classNames(projectcss.all, sty.svg__i5C1W)}
                       role={"img"}
                     />
                   }
@@ -298,11 +242,7 @@ function PlasmicNavigation__RenderFunc(props: {
                   slot={"Log in"}
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg__n3EwK
-                    )}
+                    className={classNames(projectcss.all, sty.svg__n3EwK)}
                     role={"img"}
                   />
                 </Button>
@@ -310,11 +250,7 @@ function PlasmicNavigation__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__tIoCb
-                      )}
+                      className={classNames(projectcss.all, sty.svg__tIoCb)}
                       role={"img"}
                     />
                   }
@@ -323,11 +259,7 @@ function PlasmicNavigation__RenderFunc(props: {
                   slot={"Sign up"}
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg___1A6A1
-                    )}
+                    className={classNames(projectcss.all, sty.svg___1A6A1)}
                     role={"img"}
                   />
                 </Button>
@@ -339,25 +271,19 @@ function PlasmicNavigation__RenderFunc(props: {
 
         {(hasVariant(variants, "centered", "centered") ? true : false) ? (
           <div
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__lfHbt,
-              {
-                [sty.freeBox__centered__lfHbtJ5RfS]: hasVariant(
-                  variants,
-                  "centered",
-                  "centered"
-                )
-              }
-            )}
+            className={classNames(projectcss.all, sty.freeBox__lfHbt, {
+              [sty.freeBox__centered__lfHbtJ5RfS]: hasVariant(
+                variants,
+                "centered",
+                "centered"
+              )
+            })}
           >
             {(hasVariant(variants, "centered", "centered") ? false : true) ? (
               <button
                 className={classNames(
-                  defaultcss.button,
                   projectcss.button,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.button__effm1,
                   {
                     [sty.button__centered__effm1J5RfS]: hasVariant(
@@ -380,11 +306,7 @@ function PlasmicNavigation__RenderFunc(props: {
             <Button
               children2={
                 <svg
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.svg__oo2F0
-                  )}
+                  className={classNames(projectcss.all, sty.svg__oo2F0)}
                   role={"img"}
                 />
               }
@@ -404,11 +326,7 @@ function PlasmicNavigation__RenderFunc(props: {
               slot={"Log in"}
             >
               <svg
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__xb0Dx
-                )}
+                className={classNames(projectcss.all, sty.svg__xb0Dx)}
                 role={"img"}
               />
             </Button>

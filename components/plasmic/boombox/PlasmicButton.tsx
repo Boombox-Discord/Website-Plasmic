@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
 import * as sty from "./PlasmicButton.module.css"; // plasmic-import: OTuzjleeHGwD/css
 
@@ -157,45 +157,39 @@ function PlasmicButton__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.a,
-        projectcss.a,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root__bgDifference]: hasVariant(
-            variants,
-            "bgDifference",
-            "bgDifference"
-          ),
-          [sty.root__colors_blue]: hasVariant(variants, "colors", "blue"),
-          [sty.root__colors_green]: hasVariant(variants, "colors", "green"),
-          [sty.root__colors_indigo]: hasVariant(variants, "colors", "indigo"),
-          [sty.root__colors_oxfordBlue]: hasVariant(
-            variants,
-            "colors",
-            "oxfordBlue"
-          ),
-          [sty.root__colors_red]: hasVariant(variants, "colors", "red"),
-          [sty.root__colors_white]: hasVariant(variants, "colors", "white"),
-          [sty.root__darkGray]: hasVariant(variants, "darkGray", "darkGray"),
-          [sty.root__endIcon]: hasVariant(variants, "endIcon", "endIcon"),
-          [sty.root__extraSmallShadow]: hasVariant(
-            variants,
-            "extraSmallShadow",
-            "extraSmallShadow"
-          ),
-          [sty.root__flat]: hasVariant(variants, "flat", "flat"),
-          [sty.root__large]: hasVariant(variants, "large", "large"),
-          [sty.root__linkLabel]: hasVariant(variants, "linkLabel", "linkLabel"),
-          [sty.root__navLink]: hasVariant(variants, "navLink", "navLink"),
-          [sty.root__noGap]: hasVariant(variants, "noGap", "noGap"),
-          [sty.root__noLabel]: hasVariant(variants, "noLabel", "noLabel"),
-          [sty.root__ouline]: hasVariant(variants, "ouline", "ouline"),
-          [sty.root__round]: hasVariant(variants, "round", "round"),
-          [sty.root__startIcon]: hasVariant(variants, "startIcon", "startIcon")
-        }
-      )}
+      className={classNames(projectcss.a, projectcss.root_reset, sty.root, {
+        [sty.root__bgDifference]: hasVariant(
+          variants,
+          "bgDifference",
+          "bgDifference"
+        ),
+        [sty.root__colors_blue]: hasVariant(variants, "colors", "blue"),
+        [sty.root__colors_green]: hasVariant(variants, "colors", "green"),
+        [sty.root__colors_indigo]: hasVariant(variants, "colors", "indigo"),
+        [sty.root__colors_oxfordBlue]: hasVariant(
+          variants,
+          "colors",
+          "oxfordBlue"
+        ),
+        [sty.root__colors_red]: hasVariant(variants, "colors", "red"),
+        [sty.root__colors_white]: hasVariant(variants, "colors", "white"),
+        [sty.root__darkGray]: hasVariant(variants, "darkGray", "darkGray"),
+        [sty.root__endIcon]: hasVariant(variants, "endIcon", "endIcon"),
+        [sty.root__extraSmallShadow]: hasVariant(
+          variants,
+          "extraSmallShadow",
+          "extraSmallShadow"
+        ),
+        [sty.root__flat]: hasVariant(variants, "flat", "flat"),
+        [sty.root__large]: hasVariant(variants, "large", "large"),
+        [sty.root__linkLabel]: hasVariant(variants, "linkLabel", "linkLabel"),
+        [sty.root__navLink]: hasVariant(variants, "navLink", "navLink"),
+        [sty.root__noGap]: hasVariant(variants, "noGap", "noGap"),
+        [sty.root__noLabel]: hasVariant(variants, "noLabel", "noLabel"),
+        [sty.root__ouline]: hasVariant(variants, "ouline", "ouline"),
+        [sty.root__round]: hasVariant(variants, "round", "round"),
+        [sty.root__startIcon]: hasVariant(variants, "startIcon", "startIcon")
+      })}
       component={Link}
       href={args.link}
       platform={"nextjs"}
@@ -210,11 +204,7 @@ function PlasmicButton__RenderFunc(props: {
         ? p.renderPlasmicSlot({
             defaultContents: (
               <svg
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg___2QSwx
-                )}
+                className={classNames(projectcss.all, sty.svg___2QSwx)}
                 role={"img"}
               />
             ),
@@ -313,11 +303,7 @@ function PlasmicButton__RenderFunc(props: {
         ? p.renderPlasmicSlot({
             defaultContents: (
               <svg
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__cJHqH
-                )}
+                className={classNames(projectcss.all, sty.svg__cJHqH)}
                 role={"img"}
               />
             ),

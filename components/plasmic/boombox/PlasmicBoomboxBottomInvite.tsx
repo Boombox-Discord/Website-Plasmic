@@ -35,10 +35,10 @@ import {
 } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: OTuzjleeHGwD/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: fexfuEBwKf3q/globalVariant
+import { useScreenVariants as useScreenVariantsfexfuEBwKf3Q } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: fexfuEBwKf3q/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
 import * as sty from "./PlasmicBoomboxBottomInvite.module.css"; // plasmic-import: aBt1NRUsayI0/css
 
@@ -83,7 +83,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
   const { variants, args, overrides, forNode, dataFetches } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsfexfuEBwKf3Q()
   });
 
   return (
@@ -94,44 +94,31 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <div
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
-        className={classNames(defaultcss.all, projectcss.all, sty.freeBox)}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
         <div
           data-plasmic-name={"art"}
           data-plasmic-override={overrides.art}
-          className={classNames(defaultcss.all, projectcss.all, sty.art)}
+          className={classNames(projectcss.all, sty.art)}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <React.Fragment>
                 <img
                   alt={""}
-                  className={classNames(
-                    defaultcss.img,
-                    projectcss.img,
-                    sty.img__fbian
-                  )}
+                  className={classNames(projectcss.img, sty.img__fbian)}
                   src={
                     "https://images.unsplash.com/photo-1530099486328-e021101a494a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2916&q=80" as const
                   }
                 />
 
                 <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox__o3Zc
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox__o3Zc)}
                 />
               </React.Fragment>
             ),
@@ -144,7 +131,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
           data-plasmic-name={"copy"}
           data-plasmic-override={overrides.copy}
           hasGap={true}
-          className={classNames(defaultcss.all, projectcss.all, sty.copy)}
+          className={classNames(projectcss.all, sty.copy)}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
@@ -152,17 +139,12 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox___8Cij0
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox___8Cij0)}
                 >
                   <div
                     className={classNames(
-                      defaultcss.all,
                       projectcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.text___2YBm9
                     )}
                   >
@@ -171,9 +153,8 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
 
                   <div
                     className={classNames(
-                      defaultcss.all,
                       projectcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.text___3Ydnw
                     )}
                   >
@@ -182,9 +163,8 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
 
                   <div
                     className={classNames(
-                      defaultcss.all,
                       projectcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.text___0PfrI
                     )}
                   >
@@ -197,20 +177,12 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox__fiQzT
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox__fiQzT)}
                 >
                   <Button
                     children2={
                       <svg
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg__bkDUt
-                        )}
+                        className={classNames(projectcss.all, sty.svg__bkDUt)}
                         role={"img"}
                       />
                     }
@@ -219,11 +191,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                     slot={"Start now ->"}
                   >
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__pmV5W
-                      )}
+                      className={classNames(projectcss.all, sty.svg__pmV5W)}
                       role={"img"}
                     />
                   </Button>
@@ -232,11 +200,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                     bgDifference={"bgDifference" as const}
                     children2={
                       <svg
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg__fnKiN
-                        )}
+                        className={classNames(projectcss.all, sty.svg__fnKiN)}
                         role={"img"}
                       />
                     }
@@ -245,9 +209,8 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                     slot={
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__gY6VG
                         )}
                       >
@@ -256,11 +219,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                     }
                   >
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__dbQVt
-                      )}
+                      className={classNames(projectcss.all, sty.svg__dbQVt)}
                       role={"img"}
                     />
                   </Button>

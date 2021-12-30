@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
 import * as sty from "./PlasmicTextinput.module.css"; // plasmic-import: -7Lp1vdbVUgG/css
 
@@ -72,12 +72,7 @@ function PlasmicTextinput__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.input,
-        projectcss.input,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.input, projectcss.root_reset, sty.root)}
       placeholder={"Some placeholder" as const}
       size={1 as const}
       type={"text" as const}

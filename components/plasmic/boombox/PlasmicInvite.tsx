@@ -40,7 +40,7 @@ import ValuesSection3 from "../../ValuesSection3"; // plasmic-import: RA0kcS6Nzh
 import Footer from "../../Footer"; // plasmic-import: qHry5XO3se/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
 import * as sty from "./PlasmicInvite.module.css"; // plasmic-import: Qx2EHlFquu/css
 
@@ -95,14 +95,13 @@ function PlasmicInvite__RenderFunc(props: {
         }
       `}</style>
 
-      <div className={defaultcss.plasmic_page_wrapper}>
+      <div className={projectcss.plasmic_page_wrapper}>
         <div
           data-plasmic-name={"root"}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
-            defaultcss.all,
             projectcss.all,
             projectcss.root_reset,
             sty.root
@@ -118,11 +117,7 @@ function PlasmicInvite__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__cqxrj
-                      )}
+                      className={classNames(projectcss.all, sty.svg__cqxrj)}
                       role={"img"}
                     />
                   }
@@ -132,9 +127,8 @@ function PlasmicInvite__RenderFunc(props: {
                   slot={
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__lhC9O
                       )}
                     >
@@ -143,11 +137,7 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg__ffSzI
-                    )}
+                    className={classNames(projectcss.all, sty.svg__ffSzI)}
                     role={"img"}
                   />
                 </Button>
@@ -155,11 +145,7 @@ function PlasmicInvite__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__wDeI
-                      )}
+                      className={classNames(projectcss.all, sty.svg__wDeI)}
                       role={"img"}
                     />
                   }
@@ -169,9 +155,8 @@ function PlasmicInvite__RenderFunc(props: {
                   slot={
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__i36SS
                       )}
                     >
@@ -180,11 +165,7 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg__cobLi
-                    )}
+                    className={classNames(projectcss.all, sty.svg__cobLi)}
                     role={"img"}
                   />
                 </Button>
@@ -192,11 +173,7 @@ function PlasmicInvite__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__eFg80
-                      )}
+                      className={classNames(projectcss.all, sty.svg__eFg80)}
                       role={"img"}
                     />
                   }
@@ -206,9 +183,8 @@ function PlasmicInvite__RenderFunc(props: {
                   slot={
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text___9L2Tc
                       )}
                     >
@@ -217,11 +193,7 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg___0S80E
-                    )}
+                    className={classNames(projectcss.all, sty.svg___0S80E)}
                     role={"img"}
                   />
                 </Button>
@@ -229,11 +201,7 @@ function PlasmicInvite__RenderFunc(props: {
                 <Button
                   children2={
                     <svg
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__ijDce
-                      )}
+                      className={classNames(projectcss.all, sty.svg__ijDce)}
                       role={"img"}
                     />
                   }
@@ -243,11 +211,7 @@ function PlasmicInvite__RenderFunc(props: {
                   slot={"Support Server"}
                 >
                   <svg
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg__qyQK
-                    )}
+                    className={classNames(projectcss.all, sty.svg__qyQK)}
                     role={"img"}
                   />
                 </Button>
@@ -264,26 +228,17 @@ function PlasmicInvite__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox__k7M80
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox__k7M80)}
                 >
                   <div
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.freeBox__gpDgL
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__gpDgL)}
                   >
                     <h2
                       data-plasmic-name={"h2"}
                       data-plasmic-override={overrides.h2}
                       className={classNames(
-                        defaultcss.h2,
                         projectcss.h2,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.h2
                       )}
                     >
@@ -293,9 +248,8 @@ function PlasmicInvite__RenderFunc(props: {
 
                   <div
                     className={classNames(
-                      defaultcss.all,
                       projectcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.text__vsBn0
                     )}
                   >
@@ -308,11 +262,7 @@ function PlasmicInvite__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox__mmTsb
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox__mmTsb)}
                 >
                   <Button
                     className={classNames("__wab_instance", sty.button__ikxGl)}
@@ -323,9 +273,8 @@ function PlasmicInvite__RenderFunc(props: {
                     slot={
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text___8QMbN
                         )}
                       >
