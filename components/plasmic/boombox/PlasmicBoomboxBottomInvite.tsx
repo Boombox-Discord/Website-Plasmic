@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -39,8 +40,8 @@ import { useScreenVariants as useScreenVariantsfexfuEBwKf3Q } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
-import * as sty from "./PlasmicBoomboxBottomInvite.module.css"; // plasmic-import: aBt1NRUsayI0/css
+import projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
+import sty from "./PlasmicBoomboxBottomInvite.module.css"; // plasmic-import: aBt1NRUsayI0/css
 
 export type PlasmicBoomboxBottomInvite__VariantMembers = {};
 
@@ -77,10 +78,26 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
   variants: PlasmicBoomboxBottomInvite__VariantsArgs;
   args: PlasmicBoomboxBottomInvite__ArgsType;
   overrides: PlasmicBoomboxBottomInvite__OverridesType;
-  dataFetches?: PlasmicBoomboxBottomInvite__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsfexfuEBwKf3Q()
@@ -94,7 +111,14 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <div
         data-plasmic-name={"freeBox"}
@@ -111,7 +135,11 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
               <React.Fragment>
                 <img
                   alt={""}
-                  className={classNames(projectcss.img, sty.img__fbian)}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.img,
+                    sty.img__fbian
+                  )}
                   src={
                     "https://images.unsplash.com/photo-1530099486328-e021101a494a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2916&q=80" as const
                   }
@@ -197,7 +225,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                   </Button>
 
                   <Button
-                    bgDifference={"bgDifference" as const}
+                    bgDifference={true}
                     children2={
                       <svg
                         className={classNames(projectcss.all, sty.svg__fnKiN)}
@@ -205,7 +233,7 @@ function PlasmicBoomboxBottomInvite__RenderFunc(props: {
                       />
                     }
                     className={classNames("__wab_instance", sty.button___1T69H)}
-                    darkGray={"darkGray" as const}
+                    darkGray={true}
                     slot={
                       <div
                         className={classNames(
@@ -261,7 +289,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicBoomboxBottomInvite__VariantsArgs;
     args?: PlasmicBoomboxBottomInvite__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicBoomboxBottomInvite__Fetches;
   } & Omit<PlasmicBoomboxBottomInvite__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicBoomboxBottomInvite__ArgsType, ReservedPropsType> &
@@ -281,20 +308,21 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicBoomboxBottomInvite__ArgProps,
-      internalVariantPropNames: PlasmicBoomboxBottomInvite__VariantProps
-    });
-
-    const { dataFetches } = props;
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicBoomboxBottomInvite__ArgProps,
+          internalVariantPropNames: PlasmicBoomboxBottomInvite__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicBoomboxBottomInvite__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

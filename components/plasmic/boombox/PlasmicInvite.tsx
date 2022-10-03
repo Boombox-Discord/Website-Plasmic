@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -41,8 +42,8 @@ import Footer from "../../Footer"; // plasmic-import: qHry5XO3se/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
-import * as sty from "./PlasmicInvite.module.css"; // plasmic-import: Qx2EHlFquu/css
+import projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
+import sty from "./PlasmicInvite.module.css"; // plasmic-import: Qx2EHlFquu/css
 
 export type PlasmicInvite__VariantMembers = {};
 
@@ -62,30 +63,47 @@ export type PlasmicInvite__OverridesType = {
   footer?: p.Flex<typeof Footer>;
 };
 
-export interface DefaultInviteProps {
-  dataFetches: PlasmicInvite__Fetches;
-}
+export interface DefaultInviteProps {}
 
 function PlasmicInvite__RenderFunc(props: {
   variants: PlasmicInvite__VariantsArgs;
   args: PlasmicInvite__ArgsType;
   overrides: PlasmicInvite__OverridesType;
-  dataFetches?: PlasmicInvite__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">
-          {"Boombox - Free Discord Music Bot | Invite Link"}
-        </title>
+        <title key="title">{PlasmicInvite.pageMetadata.title}</title>
         <meta
           key="og:title"
           property="og:title"
-          content={"Boombox - Free Discord Music Bot | Invite Link"}
+          content={PlasmicInvite.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicInvite.pageMetadata.title}
         />
       </Head>
 
@@ -104,13 +122,16 @@ function PlasmicInvite__RenderFunc(props: {
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
             sty.root
           )}
         >
           <Navigation
             data-plasmic-name={"navigation"}
             data-plasmic-override={overrides.navigation}
-            boomboxBg={"boomboxBg" as const}
+            boomboxBg={true}
             className={classNames("__wab_instance", sty.navigation)}
             slot={
               <React.Fragment>
@@ -123,7 +144,7 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                   className={classNames("__wab_instance", sty.button__esOho)}
                   link={"/" as const}
-                  navLink={"navLink" as const}
+                  navLink={true}
                   slot={
                     <div
                       className={classNames(
@@ -151,7 +172,7 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                   className={classNames("__wab_instance", sty.button__sbWWm)}
                   link={"https://www.patreon.com/boomboxdev" as const}
-                  navLink={"navLink" as const}
+                  navLink={true}
                   slot={
                     <div
                       className={classNames(
@@ -179,7 +200,7 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                   className={classNames("__wab_instance", sty.button__dVZfk)}
                   link={"https://status.boomboxdiscord.dev/" as const}
-                  navLink={"navLink" as const}
+                  navLink={true}
                   slot={
                     <div
                       className={classNames(
@@ -207,7 +228,7 @@ function PlasmicInvite__RenderFunc(props: {
                   }
                   className={classNames("__wab_instance", sty.button__wqM9B)}
                   link={"https://discord.gg/HKnyEB9" as const}
-                  navLink={"navLink" as const}
+                  navLink={true}
                   slot={"Support Server"}
                 >
                   <svg
@@ -237,6 +258,7 @@ function PlasmicInvite__RenderFunc(props: {
                       data-plasmic-name={"h2"}
                       data-plasmic-override={overrides.h2}
                       className={classNames(
+                        projectcss.all,
                         projectcss.h2,
                         projectcss.__wab_text,
                         sty.h2
@@ -327,7 +349,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicInvite__VariantsArgs;
     args?: PlasmicInvite__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicInvite__Fetches;
   } & Omit<PlasmicInvite__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicInvite__ArgsType, ReservedPropsType> &
@@ -347,20 +368,21 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicInvite__ArgProps,
-      internalVariantPropNames: PlasmicInvite__VariantProps
-    });
-
-    const { dataFetches } = props;
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicInvite__ArgProps,
+          internalVariantPropNames: PlasmicInvite__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicInvite__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };
@@ -384,7 +406,15 @@ export const PlasmicInvite = Object.assign(
 
     // Metadata about props expected for PlasmicInvite
     internalVariantProps: PlasmicInvite__VariantProps,
-    internalArgProps: PlasmicInvite__ArgProps
+    internalArgProps: PlasmicInvite__ArgProps,
+
+    // Page metadata
+    pageMetadata: {
+      title: "Boombox - Free Discord Music Bot | Invite Link",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 

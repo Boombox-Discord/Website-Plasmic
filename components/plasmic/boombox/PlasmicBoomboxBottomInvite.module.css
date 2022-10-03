@@ -1,8 +1,8 @@
 .root {
-  display: flex;
   flex-direction: row;
+  display: flex;
   position: relative;
-  background: #ffffff;
+  background: var(--token-krVhVRW-JWyh);
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -57,7 +57,7 @@
 .img__fbian > picture > img {
   object-fit: cover;
 }
-.img__fbian > .__wab_img-spacer > img {
+.img__fbian > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .freeBox__o3Zc {
@@ -68,13 +68,13 @@
   right: 0;
   bottom: 0;
   mix-blend-mode: multiply;
-  background: #007aff;
+  background: var(--token-6QO1a0Z11Qxo);
 }
 .copy {
-  display: flex;
   flex-direction: column;
+  display: flex;
   width: 100%;
-  background: #009ddc;
+  background: var(--token-ygadpItJM);
   min-width: 0;
   padding: 64px;
 }
@@ -96,14 +96,14 @@
   }
 }
 .freeBox___8Cij0 {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
 }
 .freeBox___8Cij0 > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
 }
@@ -124,23 +124,23 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   height: auto;
-  color: #ffffffd9 /* plasmic-token: 9WHHuUZ-wxi3 */;
+  color: var(--token-9WHHuUZ-wxi3);
 }
 .text___3Ydnw {
   font-size: 48px;
   font-weight: 800;
-  color: #ffffffd9 /* plasmic-token: 9WHHuUZ-wxi3 */;
+  color: var(--token-9WHHuUZ-wxi3);
   line-height: 1;
 }
 .text___0PfrI {
   font-size: 20px;
-  color: #ffffff80 /* plasmic-token: l6sn4I48XlVX */;
+  color: var(--token-l6sn4I48XlVX);
   line-height: 28px;
 }
 .freeBox__fiQzT {
+  flex-direction: row;
   display: flex;
   position: relative;
-  flex-direction: row;
 }
 .freeBox__fiQzT > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -166,14 +166,14 @@
   height: 24px;
   position: relative;
   object-fit: cover;
-  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+  color: var(--token-LR4XAI-kupmd);
 }
 .svg__bkDUt {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+  color: var(--token-LR4XAI-kupmd);
 }
 .button___1T69H:global(.__wab_instance) {
   position: relative;
@@ -183,7 +183,7 @@
   height: 24px;
   position: relative;
   object-fit: cover;
-  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+  color: var(--token-LR4XAI-kupmd);
 }
 .text__gY6VG {
   height: auto;
@@ -194,5 +194,5 @@
   height: 24px;
   position: relative;
   object-fit: cover;
-  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+  color: var(--token-LR4XAI-kupmd);
 }

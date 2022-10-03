@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -36,8 +37,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
-import * as sty from "./PlasmicTextinput.module.css"; // plasmic-import: -7Lp1vdbVUgG/css
+import projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
+import sty from "./PlasmicTextinput.module.css"; // plasmic-import: -7Lp1vdbVUgG/css
 
 export type PlasmicTextinput__VariantMembers = {};
 
@@ -61,10 +62,26 @@ function PlasmicTextinput__RenderFunc(props: {
   variants: PlasmicTextinput__VariantsArgs;
   args: PlasmicTextinput__ArgsType;
   overrides: PlasmicTextinput__OverridesType;
-  dataFetches?: PlasmicTextinput__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   return (
     <input
@@ -72,7 +89,15 @@ function PlasmicTextinput__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(projectcss.input, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.input,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
       placeholder={"Some placeholder" as const}
       size={1 as const}
       type={"text" as const}
@@ -102,7 +127,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicTextinput__VariantsArgs;
     args?: PlasmicTextinput__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicTextinput__Fetches;
   } & Omit<PlasmicTextinput__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicTextinput__ArgsType, ReservedPropsType> &
@@ -122,20 +146,21 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTextinput__ArgProps,
-      internalVariantPropNames: PlasmicTextinput__VariantProps
-    });
-
-    const { dataFetches } = props;
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicTextinput__ArgProps,
+          internalVariantPropNames: PlasmicTextinput__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicTextinput__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

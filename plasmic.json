@@ -269,9 +269,21 @@
           "filePath": "../public/plasmic/boombox/images/boomboxPfpChristmas.png"
         }
       ],
-      "codeComponents": [],
+      "codeComponents": [
+        {
+          "id": "hsMU0gA0tK",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "w4ClBhdWvP",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/data-sources"
+        }
+      ],
       "projectApiToken": "6TN5WtYYXrw43mxCvjqiR5h4nnHCfurSXm1SAd1XVr9PtKi0ETONQe0v03ssGaOG7ZwgigjMoD9qhhFl4KtDA",
-      "indirect": false
+      "indirect": false,
+      "globalContextsFilePath": ""
     }
   ],
   "globalVariants": {
@@ -284,9 +296,10 @@
       }
     ]
   },
+  "wrapPagesWithGlobalContexts": true,
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.166",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.166/dist/plasmic.schema.json"
+  "cliVersion": "0.1.186",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.186/dist/plasmic.schema.json"
 }

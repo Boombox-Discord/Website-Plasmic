@@ -10,16 +10,16 @@
   }
 }
 .foreground {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
-  background: #ffffff;
+  background: var(--token-krVhVRW-JWyh);
   padding: 64px;
 }
 .foreground > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }
@@ -39,14 +39,14 @@
   }
 }
 .freeBox__zic8U {
-  display: flex;
   flex-direction: column;
+  display: flex;
   height: auto;
 }
 .freeBox__zic8U > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
 }
@@ -70,25 +70,25 @@
 .h2__h70UA {
   font-size: 48px;
   font-weight: 800;
-  color: #000000d9 /* plasmic-token: QkoDPcKK_h86 */;
+  color: var(--token-QkoDPcKK_h86);
   line-height: 1;
 }
 .text__fG99 {
   font-size: 20px;
-  color: #050505b0 /* plasmic-token: LR4XAI-kupmd */;
+  color: var(--token-LR4XAI-kupmd);
   text-align: left;
   line-height: 28px;
 }
 .freeBox__eCeyJ {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
   max-width: 960px;
 }
 .freeBox__eCeyJ > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }
@@ -103,14 +103,14 @@
   margin-top: 48px;
 }
 .freeBox__gawi8 {
+  flex-direction: row;
   display: flex;
   position: relative;
-  flex-direction: row;
 }
 .freeBox__gawi8 > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-left: calc(0px - 48px);
   width: calc(100% + 48px);
 }
@@ -138,7 +138,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  color: var(--token-krVhVRW-JWyh);
 }
 .valueprop__ezMry:global(.__wab_instance) {
   width: 100%;
@@ -154,7 +154,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  color: var(--token-krVhVRW-JWyh);
 }
 .valueprop__y0LyX:global(.__wab_instance) {
   width: 100%;
@@ -170,7 +170,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  color: var(--token-krVhVRW-JWyh);
 }
 .valueprop__swOOt:global(.__wab_instance) {
   width: 100%;
@@ -186,21 +186,21 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  color: var(--token-krVhVRW-JWyh);
 }
 .text__uLXvB {
   height: auto;
 }
 .freeBox__nSiNr {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
   max-width: 960px;
 }
 .freeBox__nSiNr > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }
@@ -215,14 +215,14 @@
   margin-top: 48px;
 }
 .freeBox__sUf5X {
+  flex-direction: row;
   display: flex;
   position: relative;
-  flex-direction: row;
 }
 .freeBox__sUf5X > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-left: calc(0px - 48px);
   width: calc(100% + 48px);
 }
@@ -250,7 +250,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  color: var(--token-krVhVRW-JWyh);
 }
 .text__eJIl5 {
   height: auto;
@@ -269,7 +269,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  color: var(--token-krVhVRW-JWyh);
 }
 .valueprop__t2Qsz:global(.__wab_instance) {
   width: 100%;
@@ -285,7 +285,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  color: var(--token-krVhVRW-JWyh);
 }
 .valueprop___13AxT:global(.__wab_instance) {
   width: 100%;
@@ -301,5 +301,5 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #ffffff /* plasmic-token: krVhVRW-JWyh */;
+  color: var(--token-krVhVRW-JWyh);
 }

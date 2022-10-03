@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -36,8 +37,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
-import * as sty from "./PlasmicTableCommands.module.css"; // plasmic-import: GrIe7_lVtx/css
+import projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
+import sty from "./PlasmicTableCommands.module.css"; // plasmic-import: GrIe7_lVtx/css
 
 export type PlasmicTableCommands__VariantMembers = {};
 
@@ -61,10 +62,26 @@ function PlasmicTableCommands__RenderFunc(props: {
   variants: PlasmicTableCommands__VariantsArgs;
   args: PlasmicTableCommands__ArgsType;
   overrides: PlasmicTableCommands__OverridesType;
-  dataFetches?: PlasmicTableCommands__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   return (
     <div
@@ -72,7 +89,14 @@ function PlasmicTableCommands__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     />
   ) as React.ReactElement | null;
 }
@@ -98,7 +122,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicTableCommands__VariantsArgs;
     args?: PlasmicTableCommands__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicTableCommands__Fetches;
   } & Omit<PlasmicTableCommands__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicTableCommands__ArgsType, ReservedPropsType> &
@@ -118,20 +141,21 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTableCommands__ArgProps,
-      internalVariantPropNames: PlasmicTableCommands__VariantProps
-    });
-
-    const { dataFetches } = props;
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicTableCommands__ArgProps,
+          internalVariantPropNames: PlasmicTableCommands__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicTableCommands__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

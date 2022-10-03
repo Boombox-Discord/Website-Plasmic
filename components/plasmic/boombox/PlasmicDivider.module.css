@@ -3,6 +3,6 @@
   width: 100%;
   height: 1px;
   position: relative;
-  background: #e5e5ea;
+  background: var(--token-qMDtXvsy2Vu2);
   min-width: 0;
 }

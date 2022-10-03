@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -37,19 +38,14 @@ import Header from "../../Header"; // plasmic-import: WB6h5LQiaaY8/component
 import Button from "../../Button"; // plasmic-import: OTuzjleeHGwD/component
 import Navigation from "../../Navigation"; // plasmic-import: YifvoXt3BSlX/component
 import ValuesSection3 from "../../ValuesSection3"; // plasmic-import: RA0kcS6NzhvF/component
-import Valueprop from "../../Valueprop"; // plasmic-import: hJcqnmW0bQuh/component
 import TableCommands from "../../TableCommands"; // plasmic-import: GrIe7_lVtx/component
 import BoomboxBottomInvite from "../../BoomboxBottomInvite"; // plasmic-import: aBt1NRUsayI0/component
 import Footer from "../../Footer"; // plasmic-import: qHry5XO3se/component
 
-import { useScreenVariants as useScreenVariantsfexfuEBwKf3Q } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: fexfuEBwKf3q/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
-import * as sty from "./PlasmicHomepage.module.css"; // plasmic-import: dwwYm9-1Net/css
-
-import Icon14Icon from "./icons/PlasmicIcon__Icon14"; // plasmic-import: u0-NGqUIGUnB/icon
+import projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
+import sty from "./PlasmicHomepage.module.css"; // plasmic-import: dwwYm9-1Net/css
 
 export type PlasmicHomepage__VariantMembers = {};
 
@@ -72,32 +68,47 @@ export type PlasmicHomepage__OverridesType = {
   footer?: p.Flex<typeof Footer>;
 };
 
-export interface DefaultHomepageProps {
-  dataFetches: PlasmicHomepage__Fetches;
-}
+export interface DefaultHomepageProps {}
 
 function PlasmicHomepage__RenderFunc(props: {
   variants: PlasmicHomepage__VariantsArgs;
   args: PlasmicHomepage__ArgsType;
   overrides: PlasmicHomepage__OverridesType;
-  dataFetches?: PlasmicHomepage__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, overrides, forNode } = props;
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsfexfuEBwKf3Q()
-  });
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{"Boombox - Free Discord Music Bot"}</title>
+        <title key="title">{PlasmicHomepage.pageMetadata.title}</title>
         <meta
           key="og:title"
           property="og:title"
-          content={"Boombox - Free Discord Music Bot"}
+          content={PlasmicHomepage.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicHomepage.pageMetadata.title}
         />
       </Head>
 
@@ -116,6 +127,9 @@ function PlasmicHomepage__RenderFunc(props: {
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
             sty.root
           )}
         >
@@ -142,14 +156,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ textDecoration: "underline" }}
                       >
-                        {"Boombox"}
+                        {"Boombox is now archived."}
                       </span>
-                      <React.Fragment>{""}</React.Fragment>
                     </React.Fragment>
                   </div>
 
@@ -160,18 +172,8 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__obXrB
                     )}
                   >
-                    {"A Simpler Way to Listen to Music"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__h4MyD
-                    )}
-                  >
                     {
-                      "Boombox is the easiest way to listen to music in your Discord server.\nSimply invite it to your server and start listening!"
+                      "We have made the decision to shutdown Boombox.\nScroll down to read why."
                     }
                   </div>
                 </p.Stack>
@@ -184,42 +186,12 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Button
                     children2={
                       <svg
-                        className={classNames(projectcss.all, sty.svg__py9Oy)}
-                        role={"img"}
-                      />
-                    }
-                    className={classNames("__wab_instance", sty.button___3VkpS)}
-                    darkGray={"darkGray" as const}
-                    link={"/invite" as const}
-                    round={"round" as const}
-                    slot={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__rkGd3
-                        )}
-                      >
-                        {"Add The Bot To Your Server ->"}
-                      </div>
-                    }
-                  >
-                    <svg
-                      className={classNames(projectcss.all, sty.svg___05Imd)}
-                      role={"img"}
-                    />
-                  </Button>
-
-                  <Button
-                    bgDifference={"bgDifference" as const}
-                    children2={
-                      <svg
                         className={classNames(projectcss.all, sty.svg__womkt)}
                         role={"img"}
                       />
                     }
                     className={classNames("__wab_instance", sty.button__iD4Qh)}
-                    darkGray={"darkGray" as const}
+                    darkGray={true}
                     link={"#learn-more" as const}
                     slot={
                       <div
@@ -257,7 +229,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     className={classNames("__wab_instance", sty.button__bRE)}
                     link={"https://www.patreon.com/boomboxdev" as const}
-                    navLink={"navLink" as const}
+                    navLink={true}
                     slot={
                       <div
                         className={classNames(
@@ -285,7 +257,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     className={classNames("__wab_instance", sty.button__dfVV)}
                     link={"https://status.boomboxdiscord.dev/" as const}
-                    navLink={"navLink" as const}
+                    navLink={true}
                     slot={
                       <div
                         className={classNames(
@@ -313,7 +285,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     className={classNames("__wab_instance", sty.button__dN5Vc)}
                     link={"https://discord.gg/HKnyEB9" as const}
-                    navLink={"navLink" as const}
+                    navLink={true}
                     slot={
                       <div
                         className={classNames(
@@ -331,30 +303,16 @@ function PlasmicHomepage__RenderFunc(props: {
                       role={"img"}
                     />
                   </Button>
-
-                  <Button
-                    children2={
-                      <svg
-                        className={classNames(projectcss.all, sty.svg___5Grd)}
-                        role={"img"}
-                      />
-                    }
-                    className={classNames("__wab_instance", sty.button__qkLeh)}
-                    darkGray={"darkGray" as const}
-                    link={"/invite" as const}
-                    slot={"Invite To Discord"}
-                  >
-                    <svg
-                      className={classNames(projectcss.all, sty.svg___3PPh)}
-                      role={"img"}
-                    />
-                  </Button>
                 </React.Fragment>
               }
             >
               <img
                 alt={""}
-                className={classNames(projectcss.img, sty.img__yAqDz)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.img,
+                  sty.img__yAqDz
+                )}
                 src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
               />
             </Navigation>
@@ -368,186 +326,41 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-name={"valuesSection3"}
               data-plasmic-override={overrides.valuesSection3}
               foreground={
-                <React.Fragment>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__tz9K9)}
-                    id={"learn-more" as const}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__tz9K9)}
+                  id={"learn-more" as const}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__o6M6M)}
                   >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__o6M6M)}
-                    >
-                      <h2
-                        data-plasmic-name={"h2"}
-                        data-plasmic-override={overrides.h2}
-                        className={classNames(
-                          projectcss.h2,
-                          projectcss.__wab_text,
-                          sty.h2
-                        )}
-                      >
-                        {"Boombox Discord Bot"}
-                      </h2>
-                    </div>
-
-                    <div
+                    <h2
+                      data-plasmic-name={"h2"}
+                      data-plasmic-override={overrides.h2}
                       className={classNames(
                         projectcss.all,
+                        projectcss.h2,
                         projectcss.__wab_text,
-                        sty.text__pdq14
+                        sty.h2
                       )}
                     >
-                      {
-                        "The Boombox Discord Bot is a completely free and open source Discord Bot that can play music from YouTube and Spotify."
-                      }
-                    </div>
-                  </p.Stack>
+                      {"Boombox is now archived."}
+                    </h2>
+                  </div>
 
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__c7Sdb)}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pdq14
+                    )}
                   >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__tMcJq)}
-                    >
-                      <Valueprop
-                        className={classNames(
-                          "__wab_instance",
-                          sty.valueprop___0Mu23
-                        )}
-                        flat={"flat" as const}
-                        slot={
-                          "Boombox is Open Source meaning you can help us make the bot better."
-                        }
-                        slot2={
-                          <Icon14Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__bjiu7
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        slot22={
-                          <svg
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__x0H1A
-                            )}
-                            role={"img"}
-                          />
-                        }
-                      >
-                        {"Open Source"}
-                      </Valueprop>
-
-                      <Valueprop
-                        className={classNames(
-                          "__wab_instance",
-                          sty.valueprop__kdVu
-                        )}
-                        flat={"flat" as const}
-                        slot={
-                          "Simply invite Boombox to your server and you can immediately starting listening with your friends."
-                        }
-                        slot2={
-                          <Icon14Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___7YbBo
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        slot22={
-                          <svg
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__fHgdt
-                            )}
-                            role={"img"}
-                          />
-                        }
-                      >
-                        {"Easy Set Up"}
-                      </Valueprop>
-
-                      <Valueprop
-                        className={classNames(
-                          "__wab_instance",
-                          sty.valueprop__fPXmZ
-                        )}
-                        flat={"flat" as const}
-                        slot={
-                          "Boombox let's you play from Soundcloud, Vimeo, Spotify, YouTube or any MP3 link."
-                        }
-                        slot2={
-                          <Icon14Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__whoaH
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        slot22={
-                          <svg
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__liIJz
-                            )}
-                            role={"img"}
-                          />
-                        }
-                      >
-                        {"Play from multiple sources"}
-                      </Valueprop>
-
-                      <Valueprop
-                        className={classNames(
-                          "__wab_instance",
-                          sty.valueprop__az6Tr
-                        )}
-                        flat={"flat" as const}
-                        slot={
-                          "Boombox runs on the latest tech ensuring great uptime and no interruptions to your music."
-                        }
-                        slot2={
-                          <Icon14Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__hkQmM
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        slot22={
-                          <svg
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__ozpJn
-                            )}
-                            role={"img"}
-                          />
-                        }
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ooYvO
-                          )}
-                        >
-                          {"Super Fast"}
-                        </div>
-                      </Valueprop>
-                    </p.Stack>
-                  </p.Stack>
-                </React.Fragment>
+                    {
+                      "On the 30th of September we made the decision to shutdown the Boombox Project. This was due to the fact that Discord removed our verification status, meaning Boombox can no longer join any servers. All of our GitHub Repositories are now in read only mode. The Boombox Developer Team would like to thank everyone for their support by using Boombox and helping to contribute to it's development."
+                    }
+                  </div>
+                </p.Stack>
               }
             />
 
@@ -574,7 +387,11 @@ function PlasmicHomepage__RenderFunc(props: {
             art={
               <img
                 alt={""}
-                className={classNames(projectcss.img, sty.img__mVcIh)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.img,
+                  sty.img__mVcIh
+                )}
                 src={"/plasmic/boombox/images/boomboxBottomBannersvg2.svg"}
               />
             }
@@ -622,7 +439,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       />
                     }
                     className={classNames("__wab_instance", sty.button__s28Xb)}
-                    darkGray={"darkGray" as const}
+                    darkGray={true}
                     link={"https://www.patreon.com/boomboxdev" as const}
                     slot={"Become a Patron->"}
                   >
@@ -691,7 +508,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicHomepage__VariantsArgs;
     args?: PlasmicHomepage__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicHomepage__Fetches;
   } & Omit<PlasmicHomepage__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicHomepage__ArgsType, ReservedPropsType> &
@@ -711,20 +527,21 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicHomepage__ArgProps,
-      internalVariantPropNames: PlasmicHomepage__VariantProps
-    });
-
-    const { dataFetches } = props;
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicHomepage__ArgProps,
+          internalVariantPropNames: PlasmicHomepage__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicHomepage__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };
@@ -751,7 +568,15 @@ export const PlasmicHomepage = Object.assign(
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
-    internalArgProps: PlasmicHomepage__ArgProps
+    internalArgProps: PlasmicHomepage__ArgProps,
+
+    // Page metadata
+    pageMetadata: {
+      title: "Boombox - Free Discord Music Bot",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 

@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -39,8 +40,8 @@ import { useScreenVariants as useScreenVariantsfexfuEBwKf3Q } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
-import * as sty from "./PlasmicFooter.module.css"; // plasmic-import: qHry5XO3se/css
+import projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
+import sty from "./PlasmicFooter.module.css"; // plasmic-import: qHry5XO3se/css
 
 import GithubsvgIcon from "./icons/PlasmicIcon__Githubsvg"; // plasmic-import: aUhSDn7lt2/icon
 import DiscordsvgIcon from "./icons/PlasmicIcon__Discordsvg"; // plasmic-import: XsHXLVKev/icon
@@ -72,10 +73,26 @@ function PlasmicFooter__RenderFunc(props: {
   variants: PlasmicFooter__VariantsArgs;
   args: PlasmicFooter__ArgsType;
   overrides: PlasmicFooter__OverridesType;
-  dataFetches?: PlasmicFooter__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsfexfuEBwKf3Q()
@@ -87,7 +104,14 @@ function PlasmicFooter__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__o86QI)}>
         <p.Stack
@@ -103,7 +127,7 @@ function PlasmicFooter__RenderFunc(props: {
                 data-plasmic-name={"img"}
                 data-plasmic-override={overrides.img}
                 alt={""}
-                className={classNames(projectcss.img, sty.img)}
+                className={classNames(projectcss.all, projectcss.img, sty.img)}
                 src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
               />
 
@@ -292,7 +316,7 @@ function PlasmicFooter__RenderFunc(props: {
                   />
                 }
                 className={classNames("__wab_instance", sty.button__lh50)}
-                link={"/invite" as const}
+                link={`/invite`}
                 slot={"Invite Link"}
               >
                 <svg
@@ -423,7 +447,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicFooter__VariantsArgs;
     args?: PlasmicFooter__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicFooter__Fetches;
   } & Omit<PlasmicFooter__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicFooter__ArgsType, ReservedPropsType> &
@@ -443,20 +466,21 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicFooter__ArgProps,
-      internalVariantPropNames: PlasmicFooter__VariantProps
-    });
-
-    const { dataFetches } = props;
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicFooter__ArgProps,
+          internalVariantPropNames: PlasmicFooter__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicFooter__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -36,8 +37,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
-import * as sty from "./PlasmicLogo.module.css"; // plasmic-import: vwbA6W7e_64X/css
+import projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
+import sty from "./PlasmicLogo.module.css"; // plasmic-import: vwbA6W7e_64X/css
 
 export type PlasmicLogo__VariantMembers = {
   _50Opaque: "_50Opaque";
@@ -69,10 +70,26 @@ function PlasmicLogo__RenderFunc(props: {
   variants: PlasmicLogo__VariantsArgs;
   args: PlasmicLogo__ArgsType;
   overrides: PlasmicLogo__OverridesType;
-  dataFetches?: PlasmicLogo__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   return (
     <img
@@ -81,9 +98,16 @@ function PlasmicLogo__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       alt={""}
-      className={classNames(projectcss.img, projectcss.root_reset, sty.root, {
-        [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
-      })}
+      className={classNames(
+        projectcss.all,
+        projectcss.img,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root,
+        { [sty.root_50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque") }
+      )}
       src={"/plasmic/boombox/images/boomboxPfpNewpng.png"}
     />
   ) as React.ReactElement | null;
@@ -110,7 +134,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicLogo__VariantsArgs;
     args?: PlasmicLogo__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicLogo__Fetches;
   } & Omit<PlasmicLogo__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicLogo__ArgsType, ReservedPropsType> &
@@ -130,20 +153,21 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicLogo__ArgProps,
-      internalVariantPropNames: PlasmicLogo__VariantProps
-    });
-
-    const { dataFetches } = props;
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicLogo__ArgProps,
+          internalVariantPropNames: PlasmicLogo__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicLogo__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

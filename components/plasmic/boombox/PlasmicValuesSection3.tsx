@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -37,8 +38,8 @@ import Valueprop from "../../Valueprop"; // plasmic-import: hJcqnmW0bQuh/compone
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
-import * as sty from "./PlasmicValuesSection3.module.css"; // plasmic-import: RA0kcS6NzhvF/css
+import projectcss from "./plasmic_boombox.module.css"; // plasmic-import: 4a4asApkm6hESDYKtdyu2N/projectcss
+import sty from "./PlasmicValuesSection3.module.css"; // plasmic-import: RA0kcS6NzhvF/css
 
 import Icon14Icon from "./icons/PlasmicIcon__Icon14"; // plasmic-import: u0-NGqUIGUnB/icon
 
@@ -71,10 +72,26 @@ function PlasmicValuesSection3__RenderFunc(props: {
   variants: PlasmicValuesSection3__VariantsArgs;
   args: PlasmicValuesSection3__ArgsType;
   overrides: PlasmicValuesSection3__OverridesType;
-  dataFetches?: PlasmicValuesSection3__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   return (
     <section
@@ -82,7 +99,14 @@ function PlasmicValuesSection3__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <p.Stack
         as={"div"}
@@ -102,6 +126,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.freeBox___9ITi)}>
                   <h2
                     className={classNames(
+                      projectcss.all,
                       projectcss.h2,
                       projectcss.__wab_text,
                       sty.h2__h70UA
@@ -139,7 +164,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__orthF
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={
                       "Nulla odio mauris enim parturient adipiscing vestibulum inceptos."
                     }
@@ -164,7 +189,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__ezMry
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"Consequat scelerisque a eros taciti nisl a sodales."}
                     slot2={
                       <Icon14Icon
@@ -187,7 +212,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__y0LyX
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"At ut condimentum amet adipiscing ac diam a."}
                     slot2={
                       <Icon14Icon
@@ -210,7 +235,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__swOOt
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={
                       "Donec purus nec vestibulum volutpat vivamus vulputate suspendisse."
                     }
@@ -255,7 +280,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__czZyf
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"Commodo pretium himenaeos nisi potenti ad in ante."}
                     slot2={
                       <Icon14Icon
@@ -286,7 +311,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop___0Vj5
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"Magna ullamcorper ut arcu nisi a per facilisis."}
                     slot2={
                       <Icon14Icon
@@ -309,7 +334,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__t2Qsz
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={
                       "Ac lobortis praesent sagittis dictumst fermentum vestibulum nunc."
                     }
@@ -334,7 +359,7 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop___13AxT
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"A parturient mi suspendisse nisl inceptos nullam a."}
                     slot2={
                       <Icon14Icon
@@ -385,7 +410,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicValuesSection3__VariantsArgs;
     args?: PlasmicValuesSection3__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicValuesSection3__Fetches;
   } & Omit<PlasmicValuesSection3__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicValuesSection3__ArgsType, ReservedPropsType> &
@@ -405,20 +429,21 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicValuesSection3__ArgProps,
-      internalVariantPropNames: PlasmicValuesSection3__VariantProps
-    });
-
-    const { dataFetches } = props;
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicValuesSection3__ArgProps,
+          internalVariantPropNames: PlasmicValuesSection3__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicValuesSection3__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

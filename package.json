@@ -9,8 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.166",
-    "@plasmicapp/react-web": "^0.2.90",
+    "@plasmicapp/cli": "^0.1.186",
+    "@plasmicapp/host": "^1.0.80",
+    "@plasmicapp/react-web": "^0.2.112",
     "@types/react": "^17.0.19",
     "gridjs": "^5.0.2",
     "next": "11.1.0",
